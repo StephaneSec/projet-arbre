@@ -24,35 +24,34 @@
 * Afficher deux représentation arborescente (dont une trivial car cela montre qu'il en existe toujours au moins une)
 
 
-## 4.treewidth
+## 4.treewidth OK
 
 * Afficher deux représentations et donner la largeur de chacune
 * définition de la treewidte
 
 
-## 5.nice tree
+## 5.nice tree OK
 
+### definition
 * pour améliorer les manipulations et permettre de simplifier les justifications, on va déformer les decomp pour obtenir un nice tree :
 * def : un nice tree est une decomp arb qui ne doit faire apparaître que trois type de noeud
 * affichage d'un graphe (très simple) et d'un nice tree associé
 
-#6.Applications :
-## 3-color
-### le problème
+### 6 exemple d'obtention de nice tree
+
+#7.Applications :
+## k-color
+### le problème OK
 * un graphe, on veut colorier les noeuds de telle sorte qu'aucun noeuds connectés n'est la même couleur. Le nombre de couleurs nécessaire n'est pas connu.
 * problème de décision NP (peut-on le colorier avec 3 couleurs par exemple)
-### 7. que donne la treewidth ?
-* un graphe
-* une décomposition arborescente
-* Fact : la treewidth donne le nombre de couleurs nécessaire
-
-### 8. que donne le nice-tree ?
-* les deux décomp.
-* le graphe et le nice tree
+* la treewidth permet de savoir si c'est possible
+* le nice tree permet de trouver une coloration
+ 
+### 8 example OK     
 * le coloriage : en quoi les propriétés sont utiles
 
 
-## 9. D'autres problèmes
+## 9 D'autres problèmes
 
 Décrire brièvement ce que sont ces problèmes
 * vertex-color

@@ -4,9 +4,12 @@
 \usepackage[T1]{fontenc}
 \usepackage[french]{babel}
 
+\newtheorem*{remark}{Remark}
+\newtheorem*{pb}{Problem}
 
-%\usetheme{Singapore} % theme
-\usetheme{CambridgeUS} % theme
+%\usetheme{Montpellier} % theme
+%\usetheme{CambridgeUS} % theme
+\usetheme{Boadilla} % theme
 
 
 \titlegraphic{\includegraphics [width=\linewidth]{logos.png}}
@@ -43,7 +46,7 @@
 
 %}
 %------------------------------------------------------------
-\usetheme{Montpellier}
+
 \usepackage[footheight=1em]{beamerthemeboxes}
  
 \addfootboxtemplate{\color{black}}{\color{white}
@@ -94,46 +97,49 @@
   \end{enumerate}
 \end{definition}
 
-    
+
+\uncover<2->{\underline{\textbf{Example :}}}
 
 \begin{columns}
 \begin{column}{0.46\textwidth}
   \begin{tikzpicture}[scale=0.8]
-  \uncover<2->{ \node[draw,rectangle] (G) at (-1,1.5) {\textbf{(G)}};}
-  \uncover<2-> {\node[draw,circle] (1) at (0,2) {1};}
-  \uncover<2-> {\node[draw,circle] (2) at (0,1) {2};}
-  \uncover<2-> {\node[draw,circle] (3) at (1,1.5) {3};}
-  \uncover<2-> {\node[draw,circle] (4) at (2,2) {4};}
-  \uncover<2-> {\node[draw,circle] (5) at (2,1) {5};}
-  \uncover<2-> {\node[draw,circle] (6) at (3,2) {6};}
-  \uncover<2-> {\node[draw,circle] (7) at (3,1) {7};}
-  \uncover<2-> {\node[draw,circle] (8) at (4.5,2) {8};}
-  \uncover<2-> {\node[draw,circle] (9) at (4.5,1.3) {9};}
-  \uncover<2-> {\node[draw,circle] (10) at (4,0.5) {{\tiny 10}};}
-  \uncover<2-> {\node[draw,circle] (11) at (4.8,0.5) {{\tiny 11}};}
-  \uncover<2->{\draw(1)--(3)--(2) (3)--(4)--(5)--(3) (4)--(6)--(5)--(7)--(4) (6)--(8)--(9)--(6)--(7)--(10)--(11);}
+  \uncover<2->{ \node[draw,rectangle] (G) at (-1,1.5) {\textbf{(G)}};
+  \node[draw,circle] (1) at (0,2) {1};
+  \node[draw,circle] (2) at (0,1) {2};
+  \node[draw,circle] (3) at (1,1.5) {3};
+  \node[draw,circle] (4) at (2,2) {4};
+  \node[draw,circle] (5) at (2,1) {5};
+  \node[draw,circle] (6) at (3,2) {6};
+  \node[draw,circle] (7) at (3,1) {7};
+  \node[draw,circle] (8) at (4.5,2) {8};
+  \node[draw,circle] (9) at (4.5,1.3) {9};
+  \node[draw,circle] (10) at (4,0.5) {{\tiny 10}};
+  \node[draw,circle] (11) at (4.8,0.5) {{\tiny 11}};
+  \draw(1)--(3)--(2) (3)--(4)--(5)--(3) (4)--(6)--(5)--(7)--(4) (6)--(8)--(9)--(6)--(7)--(10)--(11);}
 \end{tikzpicture}
 \end{column}
 \begin{column}{0.54\textwidth}
   \begin{tikzpicture}[scale=1]
     \uncover<2->{\draw[thick](-1,0)--(-1,2);}
-    \uncover<2-> {\node[draw,rectangle](T1) at (0,2){\textbf{(T)}};}
-  \only<3> \node[draw,ellipse](a) at (0,0){1,3};
-  \only<3> \node[draw,ellipse](b) at (2,0){2,3};
-  \only<3> \node[draw,ellipse](c) at (1,1){3,4,5};
-  \only<3> \node[draw,ellipse](d) at (3,2){4,5,6,7};
-  \only<3> \node[draw,ellipse](e) at (5,2){6,8,9};
-  \only<3> \node[draw,ellipse](f) at (4,1){7,10};
-  \only<3> \node[draw,ellipse](g) at (4.3,0){10,11};
-  \only<3>\draw(a)--(c)--(b) (c)--(d)--(e) (d)--(f)--(g);
+    \only<3>{\node[draw,rectangle](T) at (0,2){\textbf{($T_1$)}};}
+  \uncover<3>{ 
+    \node[draw,ellipse](a) at (0,0){1,3};
+    \node[draw,ellipse](b) at (2,0){2,3};
+    \node[draw,ellipse](c) at (1,1){3,4,5};
+    \node[draw,ellipse](d) at (3,2){4,5,6,7};
+    \node[draw,ellipse](e) at (5,1){6,8,9};
+    \node[draw,ellipse](f) at (3.3,1){7,10};
+    \node[draw,ellipse](g) at (3.6,0){10,11};
+    \draw(a)--(c)--(b) (c)--(d)--(e) (d)--(f)--(g);}
   
+    \only<4>{\node[draw,rectangle](T) at (0,2){\textbf{($T_2$)}};}
+  \uncover<4>{\node[draw,ellipse](h) at (1.5,1.5){4,5,6,7,8,9};
+  \node[draw,ellipse](i) at (0,0){1,2,3};
+  \node[draw,ellipse](j) at (3,0){7,10,11};
+  \draw(j)--(h)--(i);}
 
-  \only<4>\node[draw,ellipse](h) at (1.5,1.5){4,5,6,7,8,9};
-  \only<4>\node[draw,ellipse](i) at (0,0){1,2,3};
-  \only<4>\node[draw,ellipse](j) at (3,0){7,10,11};
-  \only<4>\draw(j)--(h)--(i);
-
-  \only<5>\node[draw,ellipse](k) at (2,1){1,2,3,4,5,6,7,8,9,10,11};
+      \only<5>{\node[draw,rectangle](T) at (0,2){\textbf{($T_3$)}};}
+  \uncover<5>{\node[draw,ellipse](k) at (2,1){1,2,3,4,5,6,7,8,9,10,11};}
   
   \end{tikzpicture}
   
@@ -146,107 +152,262 @@
 
 
 
-%-------------------------------------------------------------
+%-------------------- diapo 4 -----------------------------------------
 
-\end{document}
+\subsection{treewidth}
+
 
 \begin{frame}
+  \frametitle{\textcolor{green!50!black}{Treewidth}}
+
+  
+\begin{definition}[treewidth]
+ \begin{itemize}
+ \item The \emph{width} of a decomposition is largest bag size - 1.
+ \item The \emph{treewidth} of a graph is the width of the best decomposition of this graph.
+  \end{itemize}
+  
+
+\end{definition}
+
+\uncover<2->{\underline{\textbf{Example :}} Assume (T) is one of the best representation og (G) :
   \begin{tabular}{ll}
-\frametitle{ \textcolor{green!50!black}{Un graphe}}
-\begin{tikzpicture}
-  \node[draw,circle] (a) at (1,3) {a};
-  \node[draw,circle] (b) at (0,2) {b};
-  \node[draw,circle] (c) at (2,2) {c};
-  \node[draw,circle] (d) at (4,2) {d};
-  \node[draw,circle] (e) at (0,0) {e};
-  \node[draw,circle] (f) at (2,0) {f};
-  \node[draw,circle] (g) at (4,0) {g};
-  \node[draw,circle] (h) at (6,0) {h};
-  \draw (c)--(a)--(b)--(e)--(f)--(c)--(b);
-  \draw (c)--(d)--(f)--(g)--(d)--(h)--(g);
-\end{tikzpicture}
-\\\hline
-\begin{tikzpicture}
-  \node[draw,ellipse] (cdf) at (2,2) {c,d,f};
-  \node[draw,ellipse] (bcf) at (1,1) {b,c,f};
-  \node[draw,ellipse] (abc) at (0,0) {a,b,c};
-  \node[draw,ellipse] (bef) at (2,0) {b,e,f};
-  \node[draw,ellipse] (dfg) at (3,1) {d,f,g};
-  \node[draw,ellipse] (dgh) at (4,0) {d,g,h};
-  \draw (abc)--(bcf)--(cdf)--(dfg)--(dgh);
-  \draw (bef)--(bcf);
-\end{tikzpicture}
+    \begin{tikzpicture}[scale=0.8]
+      \node[draw,rectangle] (G) at (3,2.8) {\textbf(G)};
+      \node[draw,circle] (a) at (1,3) {a};
+      \node[draw,circle] (b) at (0,2) {b};
+      \node[draw,circle] (c) at (2,2) {c};
+      \node[draw,circle] (d) at (4,2) {d};
+      \node[draw,circle] (e) at (0,0) {e};
+      \node[draw,circle] (f) at (2,0) {f};
+      \node[draw,circle] (g) at (4,0) {g};
+      \node[draw,circle] (h) at (6,0) {h};
+      \draw (c)--(a)--(b)--(e)--(f)--(c)--(b);
+      \draw (c)--(d)--(f)--(g)--(d)--(h)--(g);
+    \end{tikzpicture}
+    &
+    \begin{tikzpicture}
+      \draw[thick](-1,0)--(-1,2);
+            \node[draw,rectangle] (T) at (3.8,1.6) {\textbf(T)};
+            \node[draw,ellipse] (cdf) at (2,2) {c,d,f};
+            \node[draw,ellipse] (bcf) at (1,1) {b,c,f};
+            \node[draw,ellipse] (abc) at (0,0) {a,b,c};
+            \node[draw,ellipse] (bef) at (2,0) {b,e,f};
+            \node[draw,ellipse] (dfg) at (3,1) {d,f,g};
+            \node[draw,ellipse] (dgh) at (4,0) {d,g,h};
+            \draw (abc)--(bcf)--(cdf)--(dfg)--(dgh);
+            \draw (bef)--(bcf);
+    \end{tikzpicture}
+    
+  \end{tabular}
+}
+\uncover<3->{\begin{center}\fbox{Treewidth(G)=3-1=2}\end{center}}
 
-\end{tabular}
+\uncover<4->{
+  \begin{remark} The treewidth   of a tree is 1 and if a graph have a treewidth of 1 we can claim that this graph is a forest (i.e. a collection of trees).
+    \end{remark}
+  }
 
-\begin{footnotesize}
-\end{footnotesize}
-\end{center}
 \end{frame}
 
-%-------------------------------------------------------------
-\subsection{Treewidth}
+
+
+%----------------- diapo 5 --------------------------------------------
+
+\subsection{nice tree}
 
 \begin{frame}
-  \begin{center}
-\frametitle{ \textcolor{green!50!black}{Un arbre}}
+  \frametitle{ \textcolor{green!50!black}{Nice tree}}
+  
+  \begin{definition}[nice tree]
+    A tree decomposition is \emph{nice} if every node $x$ is one of the following 4 types :
+    \begin{description}
+    \item[Leaf :] no children, $|B_x|=1$
+    \item[Introduce :] 1 child $y$, $B_x=B_y\cup \{v\}$ for some vertex $v$
+    \item[Forget :] 1 child $y$, $B_x=B_y\backslash \{v\}$ for some vertex $v$.
+    \item[Join :] 2 children $y_1$, $y_2$ with $B_x=B_{y_1}=B_{y_2}$
+    \end{description}
 
-\begin{tikzpicture}
-  \node[draw,ellipse] (cdf) at (2,2) {c,d,f};
-  \node[draw,ellipse] (bcf) at (1,1) {b,c,f};
-  \node[draw,ellipse] (abc) at (0,0) {a,b,c};
-  \node[draw,ellipse] (bef) at (2,0) {b,e,f};
-  \node[draw,ellipse] (dfg) at (3,1) {d,f,g};
-  \node[draw,ellipse] (dgh) at (4,0) {d,g,h};
-  \draw (abc)--(bcf)--(cdf)--(dfg)--(dgh);
-  \draw (bef)--(bcf);
-\end{tikzpicture}
+    \bigskip
+    \begin{tabular}{c|c|c|c}
+        
+      Leaf & Introduce & Forget & Join\\
+        
+      \begin{tikzpicture}
+        \node[draw,ellipse] (v) at (0,0) {\hspace{1mm}$v$\hspace{1mm}\ };
+        \draw(-1,-1) (1,-1);
+      \end{tikzpicture}
+      &
+      \begin{tikzpicture}
+        \node[draw,ellipse] (u) at (0,0) {u, {\textcolor{red}{v}}, w };
+        \node[draw,ellipse] (v) at (0,-1) {v,w};
+        \draw(u)--(v);
+        \draw(-1,-1) (1,-1);
+      \end{tikzpicture}
+      &
+      \begin{tikzpicture}
+        \node[draw,ellipse] (u) at (0,0) {u, w};
+        \node[draw,ellipse] (v) at (0,-1) {u, {\textcolor{red}{v}}, w };
+        \draw(u)--(v);
+        \draw(-1,-1) (1,-1);
+      \end{tikzpicture}
+      &
+      \begin{tikzpicture}
+        \node[draw,ellipse] (u) at (0,0) {u, v, w};
+        \node[draw,ellipse] (v) at (-1,-1) {u, v, w};
+        \node[draw,ellipse] (w) at (1,-1) {u, v, w};
+        \draw(v)--(u)--(w);
+      \end{tikzpicture}
+      
+    \end{tabular}
+  \end{definition}
 
-\begin{footnotesize}
-\end{footnotesize}
-\end{center}
+  \begin{remark}
+    \begin{itemize}
+    \item A tree decomposition can be turned into a nice tree decomposition
+    \item A nice tree could be very good to simplify a proof or to find an easy program to solve a problem (as we will see later).
+    \end{itemize}
+  \end{remark}
+  
+
 \end{frame}
 
 
-%-------------------------------------------------------------
-\subsection{nicetree}
+%----------------- diapo 6-------------------------------------------
+\subsection{example}
 
 \begin{frame}
-  \begin{center}
-\frametitle{ \textcolor{green!50!black}{Un joli arbre}}
-\begin{tikzpicture}
-  \node[draw,ellipse] (a) at (1/6,0) {a};
-  \node[draw,ellipse] (ab) at (2/6,1) {a,b};
-  \node[draw,ellipse] (abc) at (3/6,2) {a,b,c};
-  \node[draw,ellipse] (bc) at (4/6,3) {b,c};
-  \node[draw,ellipse] (bcf) at (8/6,4) {b,c,f};
-  \node[draw,ellipse] (cf) at (10/6,5) {c,f};
-  \node[draw,ellipse] (cdf) at (14/6,6) {c,d,f};
-  \node[draw,ellipse] (b) at (14/6,0) {b};
-  \node[draw,ellipse] (be) at (13/6,1) {b,e};
-  \node[draw,ellipse] (bef) at (12/6,2) {b,e,f};
-  \node[draw,ellipse] (bf) at (11/6,3) {b,f};
-  \node[draw,ellipse] (d) at (23/6,0) {d};
-  \node[draw,ellipse] (dh) at (22/6,1) {d,h};
-  \node[draw,ellipse] (dgh) at (21/6,2) {d,g,h};
-  \node[draw,ellipse] (dg) at (20/6,3) {d,g};
-  \node[draw,ellipse] (dfg) at (19/6,4) {d,f,g};
-  \node[draw,ellipse] (df) at (18/6,5) {d,f};
+  \frametitle{ \textcolor{green!50!black}{example}}
+  This is a decomposition tree saw previously. How could we obtain a nice tree from it ?
 
-  \draw (a)--(ab)--(abc)--(bc)--(bcf)--(bf)--(bef)--(be)--(b);
-  \draw (bcf)--(cf)--(cdf)--(df)--(dfg)--(dg)--(dgh)--(dh)--(d);
-\end{tikzpicture}
-
-\begin{footnotesize}
-\end{footnotesize}
-\end{center}
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      \begin{tikzpicture}
+%        \only<1->\node[draw,ellipse,fill=red] (cdf) at (2,2) {c,d,f};
+        \only<1->\node[draw,ellipse,fill=green] (cdf) at (2,2) {c,d,f};
+        
+        \only<1-7>\node[draw,ellipse,fill=red] (bcf) at (1,1) {b,c,f};
+        \only<7->\node[draw,ellipse,fill=green] (bcf) at (1,1) {b,c,f};
+        
+        \only<1-13>\node[draw,ellipse,fill=red] (abc) at (0,0) {a,b,c};
+        \only<13->\node[draw,ellipse,fill=green] (abc) at (0,0) {a,b,c};
+        
+        \only<1-13>\node[draw,ellipse,fill=red] (bef) at (2,0) {b,e,f};
+        \only<13->\node[draw,ellipse,fill=green] (bef) at (2,0) {b,e,f};
+        
+        \only<1-7>\node[draw,ellipse,fill=red] (dfg) at (3,1) {d,f,g};
+        \only<7->\node[draw,ellipse,fill=green] (dfg) at (3,1) {d,f,g};
+        
+        \only<1-13>\node[draw,ellipse,fill=red] (dgh) at (4,0) {d,g,h};
+        \only<13->\node[draw,ellipse,fill=green] (dgh) at (4,0) {d,g,h};
+        \draw (abc)--(bcf)--(cdf)--(dfg)--(dgh);
+        \draw (bef)--(bcf);
+      \end{tikzpicture}
+    \end{column}
+    \begin{column}{0.5\textwidth}
+      \begin{tikzpicture}[yscale=0.85]
+        \uncover<17->{\node[draw,ellipse] (a) at (1/6,0) {a};}
+        \uncover<15->{\node[draw,ellipse] (ab) at (2/6,1) {a,b};}
+        \uncover<13->{\node[draw,ellipse] (abc) at (3/6,2) {a,b,c};}
+        \uncover<11->{\node[draw,ellipse] (bc) at (4/6,3) {b,c};}
+        \uncover<9->{\node[draw,ellipse] (bcf1) at (4/6,4) {b,c,f};}
+        \uncover<7->{\node[draw,ellipse] (bcf) at (8/6,5) {b,c,f};}
+        \uncover<9->{\node[draw,ellipse] (bcf2) at (12/6,4) {b,c,f};}
+        \uncover<5->{\node[draw,ellipse] (cf) at (10/6,6) {c,f};}
+        \uncover<3->{\node[draw,ellipse] (cdf1) at (11/6,7) {c,d,f};}
+        \uncover<1->{\node[draw,ellipse] (cdf) at (14/6,8) {c,d,f};}
+        \uncover<3->{\node[draw,ellipse] (cdf2) at (18/6,7) {c,d,f};}        
+        \uncover<17->{\node[draw,ellipse] (b) at (14/6,0) {b};}
+        \uncover<15->{\node[draw,ellipse] (be) at (13/6,1) {b,e};}
+        \uncover<13->{\node[draw,ellipse] (bef) at (12/6,2) {b,e,f};}
+        \uncover<11->{\node[draw,ellipse] (bf) at (11/6,3) {b,f};}
+        \uncover<17->{\node[draw,ellipse] (d) at (23/6,1) {d};}
+        \uncover<15->{\node[draw,ellipse] (dh) at (22/6,2) {d,h};}
+        \uncover<13->{\node[draw,ellipse] (dgh) at (21/6,3) {d,g,h};}
+        \uncover<11->{\node[draw,ellipse] (dg) at (20/6,4) {d,g};}
+        \uncover<7->{\node[draw,ellipse] (dfg) at (19/6,5) {d,f,g};}
+        \uncover<5->{\node[draw,ellipse] (df) at (18/6,6) {d,f};}
+        \uncover<3->{\draw(cdf2)--(cdf)--(cdf1);}
+        \uncover<5->{\draw(cdf1)--(cf) (cdf2)--(df);}
+        \uncover<7->{\draw(cf)--(bcf) (df)--(dfg);}
+        \uncover<9->{\draw(bcf)--(bcf1) (bcf)--(bcf2);}
+        \uncover<11->{\draw(bcf1)--(bc) (bcf2)--(bf) (dfg)--(dg);}
+        \uncover<13->{\draw(bc)--(abc) (bf)--(bef) (dg)--(dgh);}
+        \uncover<15->{\draw(abc)--(ab) (bef)--(be) (dgh)--(dh);}
+        \uncover<17->{\draw(ab)--(a) (be)--(b) (dh)--(d);}
+        \uncover<2>{\node[draw,rectangle] (a) at (-1,6) {\textcolor{red}{JOIN}};}
+        \uncover<4>{\node[draw,rectangle] (a) at (-1,6) {\textcolor{red}{FORGET}};}
+        \uncover<6>{\node[draw,rectangle] (a) at (-1,6) {\textcolor{red}{INTRODUCE}};}
+        \uncover<8>{\node[draw,rectangle] (a) at (-1,6) {\textcolor{red}{JOIN}};}
+        \uncover<10>{\node[draw,rectangle] (a) at (-1,6) {\textcolor{red}{FORGET}};}
+        \uncover<12>{\node[draw,rectangle] (a) at (-1,6) {\textcolor{red}{INTRODUCE}};}
+        \uncover<14>{\node[draw,rectangle] (a) at (-1,6) {\textcolor{red}{FORGET}};}
+        \uncover<16>{\node[draw,rectangle] (a) at (-1,6) {\textcolor{red}{FORGET}};}
+               \uncover<18>{\node[draw,rectangle] (a) at (-1,6) {\textcolor{red}{LEAF}};}
+        
+      \end{tikzpicture}
+    \end{column}
+  \end{columns}
+  
 \end{frame}
 
 
-%-------------------------------------------------------------
+
+
+
+
+
+%----------------- diapo 7--------------------------------------------
+
+
 
 \section{Applications}
-\subsection{3-color}
+\subsection{k-color}
+\subsubsection{the problem}
+
+\begin{frame}
+  \frametitle{ \textcolor{green!50!black}{the problem}}
+\begin{pb}[k-color]
+  \begin{description}
+  \item[problem :] Let (G) be a graph and k an integer. We want to know if it is possible to draw each vertice of the graph such that two neighbors have never the same color and with only k color.
+
+    This problem is a problem of decision which is NP.
+  \item[tree-width :] k-color is possible for a graph (G) if and only if $k\geqslant treewidth(G)$.
+  \item[nice tree :] a nice tree of (G) give a way to find a k-coloration of (G) (if $k\geqslant treewidth(G)$).
+  \end{description}
+\end{pb}
+
+
+\uncover<2>{
+  \underline{\textbf{Illustration :}} we will use the previously trees to solve the problem with this graph :
+  \begin{center}  
+  \begin{tikzpicture}
+    \node[draw,circle] (a) at (1,3) {a};
+    \node[draw,circle] (b) at (0,2) {b};
+    \node[draw,circle] (c) at (2,2) {c};
+    \node[draw,circle] (d) at (4,2) {d};
+    \node[draw,circle] (e) at (0,0) {e};
+    \node[draw,circle] (f) at (2,0) {f};
+    \node[draw,circle] (g) at (4,0) {g};
+    \node[draw,circle] (h) at (6,0) {h};
+    \draw (c)--(a)--(b)--(e)--(f)--(c)--(b);
+    \draw (c)--(d)--(f)--(g)--(d)--(h)--(g);
+  \end{tikzpicture}      
+\end{center}
+}
+
+\end{frame}
+
+
+
+
+
+
+
+
+
+
+%----------------- diapo 8 --------------------------------------------
 \renewcommand\a{\textcolor{red}{a}}
 \renewcommand\b{\textcolor{blue}{b}}
 \renewcommand\c{\textcolor{green}{c}}
@@ -256,10 +417,20 @@
 \newcommand\g{\textcolor{green}{g}}
 \newcommand\h{\textcolor{red}{h}}
 
+\subsubsection{illustration}
 \begin{frame}
-  \begin{center}
-    \frametitle{ \textcolor{green!50!black}{Un joli arbre}}
+
+    \frametitle{ \textcolor{green!50!black}{nice tree of the graph}}
     \begin{tabular}{ll}
+\begin{minipage}{0.5\textwidth}
+      \begin{itemize}
+      \item treewith(G)=3 : we can solve the problem with 3 colors
+      \item we can fixe a color for a ``Leaf''
+      \item when we meet an ``Introduce'' we add a color
+      \item when we meet a ``Forget'' we can claim that the vertex which has disappeared won't come back (propertie of the decomposition) and so we can reuse the color.
+        
+        \end{itemize}
+      
       \begin{tikzpicture}
   \node[draw,circle] (a) at (1,3) {a};
   \node[draw,circle] (b) at (0,2) {b};
@@ -271,98 +442,132 @@
   \node[draw,circle] (h) at (6,0) {h};
   \draw (c)--(a)--(b)--(e)--(f)--(c)--(b);
   \draw (c)--(d)--(f)--(g)--(d)--(h)--(g);
-  \only<5->\node[draw,circle,fill=red] (a) at (1,3) {a};
-  \only<14-> \node[draw,circle,fill=blue] (b) at (0,2) {b};
-  \only<16-> \node[draw,circle,fill=green] (c) at (2,2) {c};
-  \only<22-> \node[draw,circle,fill=blue] (d) at (4,2) {d};
-  \only<20-> \node[draw,circle,fill=green] (e) at (0,0) {e};
-  \only<18-> \node[draw,circle,fill=red] (f) at (2,0) {f};
-  \only<24-> \node[draw,circle,fill=green] (g) at (4,0) {g};
-  \only<26-> \node[draw,circle,fill=red] (h) at (6,0) {h};
+  \only<23->\node[draw,circle,fill=red] (a) at (1,3) {a};
+  \only<23-> \node[draw,circle,fill=blue] (b) at (0,2) {b};
+  \only<23-> \node[draw,circle,fill=green] (c) at (2,2) {c};
+  \only<23-> \node[draw,circle,fill=blue] (d) at (4,2) {d};
+  \only<23-> \node[draw,circle,fill=green] (e) at (0,0) {e};
+  \only<23-> \node[draw,circle,fill=red] (f) at (2,0) {f};
+  \only<23-> \node[draw,circle,fill=green] (g) at (4,0) {g};
+  \only<23-> \node[draw,circle,fill=red] (h) at (6,0) {h};
+  \draw(0,-10);
 
       \end{tikzpicture}
+      \end{minipage}
       &
-\begin{tikzpicture}
+\begin{tikzpicture}[yscale=0.9]
   \node[draw,ellipse] (a) at (1/6,0) {a};
+  \only<2->\node[draw,ellipse] (a) at (1/6,0) {\a};
+  
   \node[draw,ellipse] (ab) at (2/6,1) {a,b};
+  \only<3->\node[draw,ellipse] (ab) at (2/6,1) {\a,\b};
+  
   \node[draw,ellipse] (abc) at (3/6,2) {a,b,c};
+  \only<4->\node[draw,ellipse] (abc) at (3/6,2) {\a,\b,\c};
+  
   \node[draw,ellipse] (bc) at (4/6,3) {b,c};
-  \node[draw,ellipse] (bcf) at (8/6,4) {b,c,f};
-  \node[draw,ellipse] (cf) at (10/6,5) {c,f};
-  \node[draw,ellipse] (cdf) at (14/6,6) {c,d,f};
+  \only<5->\node[draw,ellipse] (bc) at (4/6,3) {\b,\c};
+  
+  \node[draw,ellipse] (bcf1) at (4/6,4) {b,c,f};
+  \only<6->\node[draw,ellipse] (bcf1) at (4/6,4) {\b,\c,\f};
+  
+  \node[draw,ellipse] (bcf) at (8/6,5) {b,c,f};
+  \only<7->\node[draw,ellipse] (bcf) at (8/6,5) {\b,\c,\f};
+  
+  \node[draw,ellipse] (bcf2) at (12/6,4) {b,c,f};
+  \only<8->\node[draw,ellipse] (bcf2) at (12/6,4) {\b,\c,\f};
+  
+  \node[draw,ellipse] (cf) at (10/6,6) {c,f};
+  \only<13->\node[draw,ellipse] (cf) at (10/6,6) {\c,\f};
+  
+  \node[draw,ellipse] (cdf1) at (11/6,7) {c,d,f};
+  \only<14->\node[draw,ellipse] (cdf1) at (11/6,7) {\c,\d,\f};
+  
+  \node[draw,ellipse] (cdf) at (14/6,8) {c,d,f};
+  \only<15->\node[draw,ellipse] (cdf) at (14/6,8) {\c,\d,\f};
+  
+  \node[draw,ellipse] (cdf2) at (18/6,7) {c,d,f};
+  \only<16->\node[draw,ellipse] (cdf2) at (18/6,7) {\c,\d,\f};
+  
   \node[draw,ellipse] (b) at (14/6,0) {b};
+  \only<12->\node[draw,ellipse] (b) at (14/6,0) {\b};
+  
   \node[draw,ellipse] (be) at (13/6,1) {b,e};
+  \only<11->\node[draw,ellipse] (be) at (13/6,1) {\b,\e};
+  
   \node[draw,ellipse] (bef) at (12/6,2) {b,e,f};
+  \only<10->\node[draw,ellipse] (bef) at (12/6,2) {\b,\e,\f};
+  
   \node[draw,ellipse] (bf) at (11/6,3) {b,f};
-  \node[draw,ellipse] (d) at (23/6,0) {d};
-  \node[draw,ellipse] (dh) at (22/6,1) {d,h};
-  \node[draw,ellipse] (dgh) at (21/6,2) {d,g,h};
-  \node[draw,ellipse] (dg) at (20/6,3) {d,g};
-  \node[draw,ellipse] (dfg) at (19/6,4) {d,f,g};
-  \node[draw,ellipse] (df) at (18/6,5) {d,f};
-  \draw (a)--(ab)--(abc)--(bc)--(bcf)--(bf)--(bef)--(be)--(b);
-  \draw (bcf)--(cf)--(cdf)--(df)--(dfg)--(dg)--(dgh)--(dh)--(d);
-
-
+  \only<9->\node[draw,ellipse] (bf) at (11/6,3) {\b,\f};
   
-  \only<2-> \node[draw,ellipse] (a) at (1/6,0) {\a};
-  \only<3-> \node[draw,ellipse] (ab) at (2/6,1) {\a,b};
-  \only<4-> \node[draw,ellipse] (abc) at (3/6,2) {\a,b,c};
+  \node[draw,ellipse] (d) at (23/6,1) {d};
+  \only<22->\node[draw,ellipse] (d) at (23/6,1) {\d};
   
-  \only<6-> \node[draw,ellipse] (ab) at (2/6,1) {\a,\b};
-  \only<7-> \node[draw,ellipse] (abc) at (3/6,2) {\a,\b,c};
-  \only<8-> \node[draw,ellipse] (bc) at (4/6,3) {\b,c};
-  \only<9-> \node[draw,ellipse] (bcf) at (8/6,4) {\b,c,f};
-  \only<10-> \node[draw,ellipse] (bf) at (11/6,3) {\b,f}; 
-  \only<11-> \node[draw,ellipse] (bef) at (12/6,2) {\b,e,f};
-  \only<12-> \node[draw,ellipse] (be) at (13/6,1) {\b,e};
-  \only<13-> \node[draw,ellipse] (b) at (14/6,0) {\b};
-
-  \only<15-> \node[draw,ellipse] (abc) at (3/6,2) {\a,\b,\c};
-  \only<15-> \node[draw,ellipse] (abc) at (3/6,2) {\a,\b,\c};
-  \only<15-> \node[draw,ellipse] (bc) at (4/6,3) {\b,\c};
-  \only<15-> \node[draw,ellipse] (bcf) at (8/6,4) {\b,\c,f};
-  \only<15-> \node[draw,ellipse] (cf) at (10/6,5) {\c,f};
-  \only<15-> \node[draw,ellipse] (cdf) at (14/6,6) {\c,d,f};
-    
-  \only<17-> \node[draw,ellipse] (bf) at (11/6,3) {\b,\f}; 
-  \only<17-> \node[draw,ellipse] (bef) at (12/6,2) {\b,e,\f};
-  \only<17-> \node[draw,ellipse] (bcf) at (8/6,4) {\b,\c,\f};
-  \only<17-> \node[draw,ellipse] (cf) at (10/6,5) {\c,\f};
-  \only<17-> \node[draw,ellipse] (cdf) at (14/6,6) {\c,d,\f};
-  \only<17-> \node[draw,ellipse] (dfg) at (19/6,4) {d,\f,g};
-  \only<17-> \node[draw,ellipse] (df) at (18/6,5) {d,\f};
-
-  \only<19-> \node[draw,ellipse] (be) at (13/6,1) {\b,\e};
-  \only<19-> \node[draw,ellipse] (bef) at (12/6,2) {\b,\e,\f};
+  \node[draw,ellipse] (dh) at (22/6,2) {d,h};
+  \only<21->\node[draw,ellipse] (dh) at (22/6,2) {\d,\h};
   
-  \only<21-> \node[draw,ellipse] (cdf) at (14/6,6) {\c,\d,\f};
-  \only<21-> \node[draw,ellipse] (df) at (18/6,5) {\d,\f};
-  \only<21-> \node[draw,ellipse] (dfg) at (19/6,4) {\d,\f,g};
-  \only<21-> \node[draw,ellipse] (dg) at (20/6,3) {\d,g};
-  \only<21-> \node[draw,ellipse] (dgh) at (21/6,2) {\d,g,h};
-  \only<21-> \node[draw,ellipse] (dh) at (22/6,1) {\d,h};
-  \only<21-> \node[draw,ellipse] (d) at (23/6,0) {\d};
-
-  \only<23-> \node[draw,ellipse] (dfg) at (19/6,4) {\d,\f,\g};
-  \only<23-> \node[draw,ellipse] (dg) at (20/6,3) {\d,\g};
-  \only<23-> \node[draw,ellipse] (dgh) at (21/6,2) {\d,\g,h};
-
-  \only<25-> \node[draw,ellipse] (dh) at (22/6,1) {\d,\h};
-  \only<25-> \node[draw,ellipse] (dgh) at (21/6,2) {\d,\g,\h};
-
+  \node[draw,ellipse] (dgh) at (21/6,3) {d,g,h};
+  \only<20->\node[draw,ellipse] (dgh) at (21/6,3) {\d,\g,\h};
   
-
+  \node[draw,ellipse] (dg) at (20/6,4) {d,g};
+  \only<19->\node[draw,ellipse] (dg) at (20/6,4) {\d,\g};
   
+  \node[draw,ellipse] (dfg) at (19/6,5) {d,f,g};
+  \only<18->\node[draw,ellipse] (dfg) at (19/6,5) {\d,\f,\g};
   
-
+  \node[draw,ellipse] (df) at (18/6,6) {d,f};
+  \only<17->\node[draw,ellipse] (df) at (18/6,6) {\d,\f};
+  
+      \draw(cdf2)--(cdf)--(cdf1);
+      \draw(cdf1)--(cf) (cdf2)--(df);
+      \draw(cf)--(bcf) (df)--(dfg);
+      \draw(bcf)--(bcf1) (bcf)--(bcf2);
+      \draw(bcf1)--(bc) (bcf2)--(bf) (dfg)--(dg);
+      \draw(bc)--(abc) (bf)--(bef) (dg)--(dgh);
+      \draw(abc)--(ab) (bef)--(be) (dgh)--(dh);
+      \draw(ab)--(a) (be)--(b) (dh)--(d);
+\draw(-1,-2);
 \end{tikzpicture}
 \\\end{tabular}
-
-\begin{footnotesize}
-\end{footnotesize}
-\end{center}
 \end{frame}
 
+
+
+%----------------- diapo 9--------------------------------------------
+
+
+
+
+\subsection{max clik}
+\subsection{Hamilton cycle}
+
+\begin{frame}
+  \frametitle{ \textcolor{green!50!black}{Other applications}}
+\end{frame}
+
+
+
+
+%----------------- diapo 10--------------------------------------------
+
+
+
+\section{Mission}
+
+\begin{frame}
+  \frametitle{ \textcolor{green!50!black}{Mission}}
+\end{frame}
+
+
+%----------------- diapo 11--------------------------------------------
+
+
+
+\section{Bibliography}
+
+\begin{frame}
+  \frametitle{ \textcolor{green!50!black}{Bibliography}}
+\end{frame}
 \end{document}
  

@@ -1,4 +1,4 @@
-# 1.Page de présentation
+# 1.Page de présentation OK
 
 * université de Caen (logo)
 * Département d'informatique (logo)
@@ -18,8 +18,8 @@
 
 
 # 3.Décomposition arborescente
-## définition d'une décomposition arborescente
-* Afficher un graphe
+## définition d'une décomposition arborescente OK
+* Afficher un grapheti
 * Afficher la définition de notre décomposition arborescente
 * Afficher deux représentation arborescente (dont une trivial car cela montre qu'il en existe toujours au moins une)
 
@@ -27,7 +27,7 @@
 ## 4.treewidth
 
 * Afficher deux représentations et donner la largeur de chacune
-* définition de la treewidth
+* définition de la treewidte
 
 
 ## 5.nice tree
@@ -72,7 +72,7 @@ Décrire brièvement ce que sont ces problèmes
 * tester/améliorer ces implémentations sur de grosses structures
 * soigner la façon de présenter les résultats pour les rendre le plus compréhensible 
 
-#13 biblio
+#11 biblio
 
 
 * Cours de Florent Madeleine : M2 Decim "Complexité des CSP et des requêtes"

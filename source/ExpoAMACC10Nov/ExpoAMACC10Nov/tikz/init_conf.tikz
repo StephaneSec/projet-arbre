@@ -1,0 +1,24 @@
+\begin{tikzpicture}[scale=0.33, anchor=center]   
+
+		
+		\xdefinecolor{darkgreen}{RGB}{0,128,0}
+		
+		\draw[help lines, red] (-0.5,0) grid +(13,1);
+		
+		\filldraw[help lines, draw=red, fill=darkgreen] (0,0) rectangle + (1,1);
+		\filldraw[help lines, draw=red, fill=darkgreen] (1,0) rectangle + (1,1);
+		\filldraw[help lines, draw=red, fill=orange] (2,0) rectangle + (1,1);
+		\filldraw[help lines, draw=red, fill=darkgreen] (3,0) rectangle + (1,1);
+		\filldraw[help lines, draw=red, fill=orange] (4,0) rectangle + (1,1);
+		\filldraw[help lines, draw=red, fill=darkgreen] (5,0) rectangle + (1,1);
+		\filldraw[help lines, draw=red, fill=darkgreen] (6,0) rectangle + (1,1);
+		\filldraw[help lines, draw=red, fill=orange] (7,0) rectangle + (1,1);
+		\filldraw[help lines, draw=red, fill=orange] (8,0) rectangle + (1,1);
+		\filldraw[help lines, draw=red, fill=orange] (9,0) rectangle + (1,1);
+		\filldraw[help lines, draw=red, fill=darkgreen] (10,0) rectangle + (1,1);
+		\filldraw[help lines, draw=red, fill=darkgreen] (11,0) rectangle + (1,1);
+		
+
+
+		
+\end{tikzpicture}  

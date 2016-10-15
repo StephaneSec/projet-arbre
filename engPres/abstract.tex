@@ -1,0 +1,43 @@
+\documentclass[a4paper, 10pt,french]{article}
+\usepackage[dvips,top=1.5cm, bottom=1.5cm, left=1.5cm, right=1.5cm]{geometry}
+\usepackage{PreambuleXelatex}
+\usepackage{MacroTikz}
+\usepackage{MacroDoc}
+\pagestyle{empty}
+
+\setlength{\parindent}{0em}
+
+
+\begin{document}
+
+Un arbre est un graphe particulier mais dont la structure est plus facile à manipuler dans de nombreuses situations que celle d'un graphe. Par exemple, on peut très facilement parcourir tout ses noeuds sans en oublier ; on peut aussi naturellement le  munir d'une relation de pré-ordre.
+
+Malheureusement, un graphe n'est pas en général isomorphe à un arbre mais on peut envisager des représentations de ceux-ci sous la forme d'arbre. Il a d'ailleurs été définie une mesure permettant de voir à quel point un graphe donné peut ``ressembler'' à un arbre : la treewidth.
+
+Le premier but de ce projet est, en partant de graphe dont on connait une représentation arborescente, de résoudre des problèmes combinatoires correspondants. On peut citer par exemple le problème de 3-coloriage, le problème vertex-cover ou la génération de chaînes de Hamilton.
+
+Le deuxième but est d'implémenter un calculateur de décomposition de graphe.
+
+Enfin, on peut envisager des prolongements en travaillant sur l'efficacité des implémentations sur des structures de grandes tailles, ou encore en améliorant l'aspect des résultats pour améliorer la clarté du fonctionnement.
+
+
+\bigskip
+
+\hrule
+
+\bigskip
+
+
+A tree is a special graph but whose structure is easier to handle in many situations as a graph. For example, one can easily browse through all its nodes without forgetting; one can naturally also provide the pre-order relationship.
+
+Unfortunately, a graph is not in general isomorphic to a tree but may be represented by a tree where nodes are collections of nodes of the initial graph.  This type of representation defines a measure to see how a given graph may ``look like''  to a tree: the treewidth.
+
+The first goal of this project is, starting from a graph whose a tree representation is known, solve the corresponding combinatorial problems. We may mention for example the 3-coloring problem, the vertex-cover problem or generating Hamilton chains.
+
+The second purpose is to implement a graph decomposition calculator.
+
+Finally, we can consider extensions by working on the efficiency of implementations on large-size structures, or improving the appearance of the results to clairly show the mecanism  of the  implentation.
+\end{document}
+
+
+

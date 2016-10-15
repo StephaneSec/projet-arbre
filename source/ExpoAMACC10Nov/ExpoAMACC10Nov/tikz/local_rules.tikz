@@ -1,0 +1,30 @@
+\begin{tikzpicture}[scale=0.33, anchor=center]   
+
+		
+		\xdefinecolor{darkgreen}{RGB}{0,128,0}
+		
+		\newcommand{\mkrule}[6]{	
+			%tracer les arêtes
+ 		  	\draw[ultra thick] (#1+0.5,#2+0.5)--(#1+2,#2+2);
+ 		  	\draw[ultra thick] (#1+2,#2+0.5)--(#1+2,#2+2);
+ 		  	\draw[ultra thick] (#1+3.5,#2+0.5)--(#1+2,#2+2);
+	
+		
+			%remplir les faces
+ 			\fill[#3] (#1,#2) rectangle (#1+1,#2+1);
+ 			\fill[#4] (#1+1.5,#2) rectangle (#1+2.5,#2+1);
+ 			\fill[#5] (#1+3,#2) rectangle (#1+4,#2+1);
+ 			\fill[#6] (#1+1.5,#2+1.5) rectangle (#1+2.5,#2+2.5);		  	
+		
+		}
+
+		\mkrule{0}{0}{orange}{orange}{orange}{orange}
+		\mkrule{5}{0}{orange}{orange}{darkgreen}{darkgreen}
+		\mkrule{10}{0}{orange}{darkgreen}{orange}{orange}
+		\mkrule{15}{0}{orange}{darkgreen}{darkgreen}{orange}
+		\mkrule{0}{3}{darkgreen}{orange}{orange}{orange}
+		\mkrule{5}{3}{darkgreen}{orange}{darkgreen}{darkgreen}
+		\mkrule{10}{3}{darkgreen}{darkgreen}{orange}{darkgreen}
+		\mkrule{15}{3}{darkgreen}{darkgreen}{darkgreen}{darkgreen}
+		
+\end{tikzpicture}  

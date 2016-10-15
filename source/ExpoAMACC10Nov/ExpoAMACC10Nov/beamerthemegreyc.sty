@@ -1,0 +1,170 @@
+% A beamer theme for presentations of the GREYC laboratory, University of Caen Normandy, CNRS, ENSICAEN.
+%
+% Provides functionalities only for a standard slideshow using
+% * \maketitleframe (uses \title and \date),
+% * \separator{title}{subtitle} for separator frame introducing a new section,
+% * \frame{...} for regular frames.
+%
+% Author: Bruno Zanuttini, 2015.
+
+\ProvidesPackage{beamerthemegreyc}
+
+
+
+% ======
+% Colors
+% ======
+
+\definecolor{darkpurple}{HTML}{56004e}
+\definecolor{purple}{HTML}{780e66}
+\definecolor{darkblue}{HTML}{3c5868}
+\definecolor{blue}{HTML}{93aebe}
+\setbeamercolor{titles}{fg=darkpurple}
+\setbeamercolor{footline}{fg=blue}
+\setbeamercolor{bullets}{bg=purple}
+\setbeamercolor{normal text}{fg=darkblue}
+
+% =============
+% Misc settings
+% =============
+
+% \newcommand{\purplebullet}{\raisebox{0.15cm}{\colorbox{purple}{\ }}}
+ \newcommand{\purplebullet}{\includegraphics[width=5pt]{img/bullet_violet.png}}
+\newcommand{\purpletriangle}{\includegraphics[width=5pt]{img/triangle}}
+ \setbeamertemplate{itemize item}{\purplebullet}
+ \setbeamertemplate{itemize subitem}{\purplebullet}
+ \setbeamertemplate{itemize subsubitem}{\purpletriangle}
+ \setbeamersize{text margin right=0.25cm, text margin left=1.25cm}
+ \setbeamertemplate{navigation symbols}{}
+
+% =========
+% Templates
+% =========
+
+% Headline for all frames except title frame
+\newcommand{\standardheadline}{%
+  \vspace{0.25cm}%
+  \hfill \includegraphics[height=0.8cm]{img/LogoGreyc_AMACC.png}%
+}
+
+% Frame title
+\setbeamertemplate{frametitle}{%
+  \begin{beamercolorbox}{titles}%
+    \null\\%
+    \hspace{-1cm}\Large{\textbf{\insertframetitle}}%
+  \end{beamercolorbox}%
+}
+
+% Background for title and separator frames
+\newcommand{\widetrapeziumbackground}{%
+  \includegraphics[height=9.25cm,viewport=0 0 100 525]{img/diapo-trapeze-large-gauche.png}%
+}
+
+% Background for regular frames
+\newcommand{\narrowtrapeziumbackground}{%
+  \includegraphics[height=7.5cm,width=1.4cm,viewport=0 0 65 310]{img/diapo-trapeze-etroit-gauche.png}%
+}
+
+% Footline for title and separator frames
+\newcommand{\greycfootline}{%
+  \vspace{-0.5cm}%
+  \begin{beamercolorbox}{footline}%
+    \begin{center}%
+      \resizebox{12cm}{!}{\textbf{\uppercase{Groupe de REcherche en Informatique, Image, Automatique et Instrumentation de Caen (UMR~6072)}}}%
+    \end{center}%
+  \end{beamercolorbox}%
+}
+
+% Footline for regular frames
+\newcommand{\framefootline}{%
+  \vspace{-1.5cm}%
+  \begin{beamercolorbox}{footline}%
+    \quad\quad\raisebox{0.75cm}{\scalebox{1.2}{\insertframenumber}} \hfill \includegraphics[height=2cm]{img/diapo-coin-inferieur-droit.png}%
+  \end{beamercolorbox}%
+}
+
+
+% ===============
+% Frame templates
+% ===============
+
+% Sets all templates for use by title frame
+\newcommand{\totitleframetemplates}{%
+  \setbeamertemplate{headline}{}%
+  \setbeamertemplate{background canvas}{\widetrapeziumbackground}%
+  \setbeamertemplate{footline}{\greycfootline}%
+}
+
+% Sets all templates for use by separator frames
+\newcommand{\toseparatortemplates}{%
+  \setbeamertemplate{headline}{\standardheadline}%
+  \setbeamertemplate{background canvas}{\widetrapeziumbackground}%
+  \setbeamertemplate{footline}{\greycfootline}%
+}
+
+% Sets all templates for use by regular frames
+\newcommand{\toframetemplates}{%
+  \setbeamertemplate{headline}{\standardheadline}%
+  \setbeamertemplate{background canvas}{\narrowtrapeziumbackground}%
+  \setbeamertemplate{footline}{\framefootline}%
+}
+
+% ===================
+% Commands for frames
+% ===================
+
+% Template for title page
+\setbeamertemplate{title page}{%
+  \makebox[\textwidth][r]{%
+    \begin{minipage}{\dimexpr\paperwidth-4.75cm}%
+      \vspace{0.8cm}%
+      \begin{beamercolorbox}{titles}%
+        \includegraphics[height=2.25cm]{img/LogoGREYC_Transparence.png}\\%
+        \begin{center}%
+          \LARGE{\textbf{\inserttitle}}\\[1em]%
+        \end{center}%
+        \begin{center}%
+          \LARGE{\textbf{\insertdate}}%
+        \end{center}%
+      \end{beamercolorbox}%
+      \vspace{0.5cm}%
+      \hfill%
+      \newcommand{\logoheight}{0.9cm}%
+      \includegraphics[height=\logoheight]{img/logo-cnrs-couleur-sanstexte.jpg}\ %
+      \includegraphics[height=\logoheight]{img/UNICAEN_LOGO_2015_V2_N_ecran.png}\ %
+      \includegraphics[height=\logoheight]{img/logo-ensicaen2015-rvb.jpg}\ %
+    \end{minipage}%
+  }%
+}
+
+% Creates the title frame
+\newcommand{\maketitleframe}{%
+  \totitleframetemplates%
+  \frame{\titlepage}%
+  \toframetemplates%
+}
+
+% Creates a slide separating several sections of the presentation
+% #1: title for the next section
+% #2: subtitle for the next section (may be the empty string)
+\newcommand{\separator}[2]{%
+  \toseparatortemplates%
+  \frame{%
+    \makebox[\textwidth][r]{%
+      \begin{minipage}{\dimexpr\paperwidth-5cm}%
+        \vspace{3.25cm}%
+        \begin{beamercolorbox}{titles}%
+          \huge{\textit{\textbf{#1}}}\\[1cm]%
+          \large{\textit{\textbf{#2}}}%
+        \end{beamercolorbox}%
+        \vspace{2.42cm}%
+        \hfill%
+        \newcommand{\logoheight}{0.9cm}%
+        \includegraphics[height=\logoheight]{img/logo-cnrs-couleur-sanstexte.jpg}\ %
+        \includegraphics[height=\logoheight]{img/UNICAEN_LOGO_2015_V2_N_ecran.png}\ %
+        \includegraphics[height=\logoheight]{img/logo-ensicaen2015-rvb.jpg}\ %
+      \end{minipage}%
+    }%
+  }%
+  \toframetemplates%
+}

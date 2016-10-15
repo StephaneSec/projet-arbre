@@ -1,0 +1,282 @@
+\pdfpageattr {/Group << /S /Transparency /I true /CS /DeviceRGB>>}% bug pdflatex
+\documentclass[8pt]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+
+\usetheme{greyc}
+%% \usepackage{pgfpages}
+%% \pgfpagesuselayout{4 on 1}[letterpaper,landscape,border shrink=5mm]
+
+% Si en francais
+%\usepackage{lmodern}
+\usepackage{tikz}
+\title{Équipe \textsc{AmacC}, Thème 1 :\\[3pt] Modèles de calcul et complexité descriptive}
+\date{{\small 10 novembre 2015}}
+\definecolor{myblue}{HTML}{2b78a8}
+%\usepackage{color}
+% Véro
+\definecolor{verde}{rgb}{0.3,0.6,0.3}
+\definecolor{azul}{RGB}{0,0,200}
+\definecolor{rojo}{RGB}{205,0,0}
+\definecolor{maron}{rgb}{0.7, 0.0, 0.1}
+\definecolor{brique}{RGB}{180,0,35}
+\definecolor{or}{RGB}{255,215,0}
+\definecolor{prod}{RGB}{139,58,00} %{205,99,0} %#8B0951
+
+\setbeamercolor{titrell}{bg=blue,fg=white}
+\setbeamercolor{textell}{bg=blue!10,fg=black}
+
+
+
+\begin{document}
+
+\maketitleframe
+
+%\separator{Équipe Amacc}{}
+
+% projet de l’équipe, structuration/organigramme (1 slide)
+
+
+%-------------------------------------------------------------
+\begin{frame}
+\frametitle{Thème 1: \textcolor{green!50!black}{Modèles de calcul et complexité descriptive}}
+\begin{itemize}
+\item
+Algorithmique et complexité des automates cellulaires
+\item
+« Tight Complexity » -- algorithmes probabilistes
+\item Logique et requêtes
+\item Approches algébriques et symboliques
+\end{itemize}
+\begin{center}
+\includegraphics[width=0.15\linewidth]{images/regleACGR.pdf}~~
+\includegraphics[width=0.35\linewidth]{images/additionGR.png}~~\includegraphics[width=0.35\linewidth]{images/fifiCulikExt7.pdf}
+
+\begin{footnotesize}
+\[
+\forall \vec{x}\,\forall t \bigwedge_{a\in\{0,1\}^d} \;
+\bigwedge_{\nu\in \textsf{neighbor}_a(\mathcal{A})}
+\left\{
+(
+\neg \max(t) \wedge P_{a}(\vec{x}) \wedge
+\bigwedge_{b\in\textsf{Dom}_{a}} R_{\nu(b)}(\vec{x}+b,t)
+) \to
+%\bigvee_{s\in\delta_a(\nu)}
+R_{\delta_a(\nu)}(\vec{x}, t+1)
+\right\}
+\]
+\end{footnotesize}
+
+\includegraphics[width=0.25\linewidth]{images/cayley.png} 
+\end{center}
+\end{frame}
+
+%----------------------------------------------------------------------------
+\separator{Les Automates Cellulaires}{Un objet central et transversal du thème\\ ``Modèles de calcul et complexité descriptive"}
+%----------------------------------------------------------------------------
+\begin{frame}
+  \frametitle{Un système dynamique discret, synchrone et uniforme}
+  
+  \vspace{5mm}
+  Une configuration : \\
+  \begin{center}\input{tikz/init_conf.tikz}\end{center} 
+  La fonction locale de transition:\\
+  \begin{center}\input{tikz/local_rules.tikz}\end{center}
+  Évolution du système:\\
+  \begin{center}\input{tikz/diagramme_ET.tikz}\end{center}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%
+\frame
+{\frametitle{Les automates cellulaires\\
+un modèle aux multiples facettes et usages}
+\begin{description}
+\item[Un Modèle pour les Systèmes Dynamiques:] Modélise de nombreux Systèmes/Phénomènes à Interactions Locales: physiques, biologiques, chimiques, géologiques, économiques, etc.\\
+\item[Un Modèle de Calcul :]
+Le Modèle par excellence du calcul Local et Massivement Parallèle
+\end{description}
+
+\medskip
+
+Bien d'autres aspects encore, connus… ou à découvrir…
+}
+%%%%%%%%%%%%%%%%%%%%%
+
+\frame
+{
+  \frametitle{Le seul modèle à la fois local et uniforme}
+ 
+ C'est ce qu'exprime, dans un sens mathématique très précis, le théorème de Curtis-Hedlund-Lyndon (1969):
+  
+ \begin{theorem} Pour toute dimension $d=1,2,3,\ldots$ 
+ et tout alphabet $\Sigma$, 
+ toute fonction $G: c\in\Sigma^{\mathbb{Z}^d}\mapsto c'\in\Sigma^{\mathbb{Z}^d}$ sur les configurations infinies de dimension $d$ est 
+ \begin{itemize}
+\item {\bf invariante par décalage} (c'est-à-dire, intuitivement, {\bf uniforme})
+\item et {\bf continue} (c'est-à-dire, intuitivement, {\bf locale}) 
+\end{itemize}
+si et seulement si\\
+$G$ est (la fonction globale d')un {\bf automate cellulaire}.
+  \end{theorem}
+  
+ \bigskip
+C'est pourquoi tout système discret (i.e. à espace et temps discrets), obéissant à des règles d'évolution
+\begin{itemize}
+\item synchrones, 
+\item uniformes 
+\item et locales 
+\end{itemize}
+
+est (se modélise par) un automate cellulaire.
+}
+%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{frame}{Un modèle de calcul et un système dynamique}
+Voici un automate cellulaire reconnaissant le langage $L = 0^*10^*$.
+
+\vspace*{3mm}
+\begin{minipage}[h]{0.48\linewidth}
+	\begin{center}
+		$Q = \{0,1,\#,{\color{green}green},{\color{orange}orange},{\color{red}red}\}$\\
+		\vspace*{3mm}
+		\input{tikz/toy_ca.tikz}
+	\end{center}
+\end{minipage}
+\hfill
+\begin{minipage}[h]{0.48\linewidth}
+	\begin{center}
+		\input{tikz/example1_1.tikz}
+	\end{center}
+\end{minipage}
+
+\medskip
+
+
+\textbf{Axes de recherche:}
+\begin{itemize}
+\item Construire des algorithmes spécifiques et étudier les classes de complexité (N.~Bacquey, G.~Richard, V.~Terrier): voir soutenance de thèse N.~Bacquey le 4 décembre;
+\item Caractériser par la logique les langages reconnus (E.~Grandjean, G.~Richard);
+\item Exhiber des comportements \og atypiques\fg{} des automates cellulaires considérés comme des systèmes
+dynamiques (G.~Richard).
+\end{itemize}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%\frame
+\frame
+{
+  \frametitle{Les classes de complexité des automates cellulaires}
+  
+ \begin{itemize}
+\item Une exigence naturelle d'abord: 
+\begin{itemize}
+\item limiter l'espace de travail à l'entrée.
+\end{itemize}
+
+\item En dimension 1: 
+\begin{itemize}
+\item pour un mot d'entrée $w=w_1\ldots w_n\in\Sigma^*$, 
+\item faire le calcul sur $n$ cellules ($ = n$ processeurs)
+\item contenant chacune initialement une lettre $w_1,w_2,\ldots,w_n$ du mot $w$ 
+\item (l'alphabet $\Sigma$ est inclus dans l'ensemble des états de l'automate cellulaire).
+\end{itemize}
+
+\item C'est équivalent à prendre un espace linéaire $O(n)$.
+\end{itemize}
+}
+%%%%%%%%%%%%%%%%%%%%%
+\frame
+{
+\frametitle{Quelles classes de complexité\\ pour les automates cellulaires?}
+Essentiellement trois classes:
+\begin{itemize}
+\item \emph{L'espace linéaire} (équivalent à l'espace linéaire des machines de Turing ou des RAM)
+\item Le \emph{temps linéaire},
+\item Le \emph{temps réel} ou \emph{temps minimum}: correspond au temps minimum pour que toute lettre/bit de l'entrée puisse être communiquée à la cellule de sortie.
+\end{itemize}
+
+\bigskip
+Ces trois classes:
+\begin{itemize}
+\item sont \emph{significatives:} chacune contient un grand nombre de problèmes naturels,
+\item sont très \emph{robustes:} c'est-à-dire, peuvent être définies de multiples façons.
+\end{itemize}
+}
+%%%%%%%%%%%%%%%%%%%%%
+\frame
+{
+  \frametitle{La classe la plus significative (à mon goût):\\
+  le Temps Linéaire des automates cellulaires}
+  
+Elle contient les problèmes suivants:
+ \begin{itemize}
+ 
+\item en dimension 1,
+ 
+\begin{itemize}
+\item le tri lexicographique d'une liste de mots;
+\item le produit de deux entiers;
+\end{itemize}
+
+\item en dimension 2, 
+\begin{itemize}
+\item le produit de deux matrices booléennes $n\times n$, donc calculé en temps $O(n)$.
+\end{itemize}
+
+\end{itemize}
+
+\bigskip
+Nota: on conjecture  que le produit de matrices $n\times n$ ne peut être calculé sur aucune RAM en temps "linéaire"~$O(n^2)$; le meilleur algorithme séquentiel connu est en $O(n^{2.376})$…
+}
+
+\end{document}
+%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{frame}
+  \frametitle{Le cas de l'entrée périodique (ou circulaire)}
+  
+  Une autre façon d'incorporer l'entrée:
+  
+  \begin{center}\input{tikz/exemple_ac_diagramme_ET_period.tex}\end{center}
+  
+  \medskip
+
+  \textbf{Question}: quelles sont les différences avec la version bornée ?
+  
+  \medskip
+
+  \textbf{Remarques:}
+  \begin{itemize}
+  \item besoin d'une autre définition de l'arrêt;
+  \item langage stable par permutations circulaires (pas possible de distinguer $01$ et $10$);
+  \item langage stable par puissance et racine (pas possible de distinguer
+    $01$ et $0101$).
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}
+  \frametitle{Élection de leader}
+
+\textbf{Théorème:} [N.~Bacquey] Pour tout langage cyclique $L$, $L$
+est reconnu sur un automate cellulaire cyclique si et seulement si $L$
+est reconnu en espace linéaire.
+
+\medskip
+\begin{center}
+  \input{tikz/fig6.tikz} 
+\end{center}
+
+\medskip
+
+\textbf{Axe de recherche:}
+\begin{itemize}
+\item Exhiber des comportements \og atypiques\fg{} de ces systèmes (G.~Richard).
+\end{itemize}
+\end{frame}
+
+
+\end{document}
+\grid

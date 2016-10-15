@@ -1,0 +1,289 @@
+
+\documentclass[8pt]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+
+\title[Le titre]{détails du titre}
+
+\author{Stéphane Secouard}
+
+\institute{M2 E-Secure}
+
+\date{25 octobre 2016}
+
+\usepackage{tikz}
+\usetikzlibrary{shapes,snakes}
+\setbeamercolor{titrell}{bg=blue,fg=white}
+\setbeamercolor{textell}{bg=blue!10,fg=black}
+
+\usetheme{Montpellier}
+%\useinnertheme{circles}
+%\useoutertheme{smouthtree} 
+
+\logo{\includegraphics[height=10mm]{UNICAEN_LOGO_2015_V2_N_papier.png}}
+\AtBeginSection[]
+
+{
+
+  \begin{frame}
+
+  \frametitle{Sommaire}
+
+  \tableofcontents[currentsection, hideothersubsections, pausesubsections]
+
+  \end{frame} 
+
+}
+%------------------------------------------------------------
+
+\begin{document}
+
+
+\begin{frame}
+  \titlepage
+\end{frame}
+%------------------------------------------------------------
+
+\begin{frame}
+
+  \tableofcontents
+
+\end{frame}
+
+
+
+\section{Décomposition de graphes}
+\subsection{Décomposition arborescente}
+\subsection{Treewidth}
+\subsection{nicetree}
+%------------------------------------------------------------
+
+
+\begin{frame}
+
+  \tableofcontents[currentsection]
+
+\end{frame}
+
+%------------------------------------------------------------
+
+\begin{frame}
+  \frametitle{Un exemple de titre}
+  \framesubtitle{et de sous titre}
+
+Voici un exemple lorsque l'on change une couleur de thème.
+\begin{enumerate}
+\item dsfq
+\item dsf
+\end{enumerate}
+\begin{itemize}
+\item dsfq
+\item dsf
+\end{itemize}
+
+
+\end{frame}
+
+
+
+%-------------------------------------------------------------
+\begin{frame}
+  \begin{center}
+\frametitle{ \textcolor{green!50!black}{Un graphe}}
+\begin{tikzpicture}
+  \node[draw,circle] (a) at (1,3) {a};
+  \node[draw,circle] (b) at (0,2) {b};
+  \node[draw,circle] (c) at (2,2) {c};
+  \node[draw,circle] (d) at (4,2) {d};
+  \node[draw,circle] (e) at (0,0) {e};
+  \node[draw,circle] (f) at (2,0) {f};
+  \node[draw,circle] (g) at (4,0) {g};
+  \node[draw,circle] (h) at (6,0) {h};
+  \draw (c)--(a)--(b)--(e)--(f)--(c)--(b);
+  \draw (c)--(d)--(f)--(g)--(d)--(h)--(g);
+\end{tikzpicture}
+
+
+\begin{footnotesize}
+\end{footnotesize}
+\end{center}
+\end{frame}
+
+%-------------------------------------------------------------
+
+\begin{frame}
+  \begin{center}
+\frametitle{ \textcolor{green!50!black}{Un arbre}}
+
+\begin{tikzpicture}
+  \node[draw,ellipse] (cdf) at (2,2) {c,d,f};
+  \node[draw,ellipse] (bcf) at (1,1) {b,c,f};
+  \node[draw,ellipse] (abc) at (0,0) {a,b,c};
+  \node[draw,ellipse] (bef) at (2,0) {b,e,f};
+  \node[draw,ellipse] (dfg) at (3,1) {d,f,g};
+  \node[draw,ellipse] (dgh) at (4,0) {d,g,h};
+  \draw (abc)--(bcf)--(cdf)--(dfg)--(dgh);
+  \draw (bef)--(bcf);
+\end{tikzpicture}
+
+\begin{footnotesize}
+\end{footnotesize}
+\end{center}
+\end{frame}
+
+
+%-------------------------------------------------------------
+
+\begin{frame}
+  \begin{center}
+\frametitle{ \textcolor{green!50!black}{Un joli arbre}}
+\begin{tikzpicture}
+  \node[draw,ellipse] (a) at (1/6,0) {a};
+  \node[draw,ellipse] (ab) at (2/6,1) {a,b};
+  \node[draw,ellipse] (abc) at (3/6,2) {a,b,c};
+  \node[draw,ellipse] (bc) at (4/6,3) {b,c};
+  \node[draw,ellipse] (bcf) at (8/6,4) {b,c,f};
+  \node[draw,ellipse] (cf) at (10/6,5) {c,f};
+  \node[draw,ellipse] (cdf) at (14/6,6) {c,d,f};
+  \node[draw,ellipse] (b) at (14/6,0) {b};
+  \node[draw,ellipse] (be) at (13/6,1) {b,e};
+  \node[draw,ellipse] (bef) at (12/6,2) {b,e,f};
+  \node[draw,ellipse] (bf) at (11/6,3) {b,f};
+  \node[draw,ellipse] (d) at (23/6,0) {d};
+  \node[draw,ellipse] (dh) at (22/6,1) {d,h};
+  \node[draw,ellipse] (dgh) at (21/6,2) {d,g,h};
+  \node[draw,ellipse] (dg) at (20/6,3) {d,g};
+  \node[draw,ellipse] (dfg) at (19/6,4) {d,f,g};
+  \node[draw,ellipse] (df) at (18/6,5) {d,f};
+
+  \draw (a)--(ab)--(abc)--(bc)--(bcf)--(bf)--(bef)--(be)--(b);
+  \draw (bcf)--(cf)--(cdf)--(df)--(dfg)--(dg)--(dgh)--(dh)--(d);
+\end{tikzpicture}
+
+\begin{footnotesize}
+\end{footnotesize}
+\end{center}
+\end{frame}
+
+
+%-------------------------------------------------------------
+\renewcommand\a{\textcolor{red}{a}}
+\renewcommand\b{\textcolor{blue}{b}}
+\renewcommand\c{\textcolor{green}{c}}
+\renewcommand\d{\textcolor{blue}{d}}
+\newcommand\e{\textcolor{green}{e}}
+\newcommand\f{\textcolor{red}{f}}
+\newcommand\g{\textcolor{green}{g}}
+\newcommand\h{\textcolor{red}{h}}
+
+\begin{frame}
+  \begin{center}
+    \frametitle{ \textcolor{green!50!black}{Un joli arbre}}
+    \begin{tabular}{ll}
+      \begin{tikzpicture}
+  \node[draw,circle] (a) at (1,3) {a};
+  \node[draw,circle] (b) at (0,2) {b};
+  \node[draw,circle] (c) at (2,2) {c};
+  \node[draw,circle] (d) at (4,2) {d};
+  \node[draw,circle] (e) at (0,0) {e};
+  \node[draw,circle] (f) at (2,0) {f};
+  \node[draw,circle] (g) at (4,0) {g};
+  \node[draw,circle] (h) at (6,0) {h};
+  \draw (c)--(a)--(b)--(e)--(f)--(c)--(b);
+  \draw (c)--(d)--(f)--(g)--(d)--(h)--(g);
+  \only<5->\node[draw,circle,fill=red] (a) at (1,3) {a};
+  \only<14-> \node[draw,circle,fill=blue] (b) at (0,2) {b};
+  \only<16-> \node[draw,circle,fill=green] (c) at (2,2) {c};
+  \only<22-> \node[draw,circle,fill=blue] (d) at (4,2) {d};
+  \only<20-> \node[draw,circle,fill=green] (e) at (0,0) {e};
+  \only<18-> \node[draw,circle,fill=red] (f) at (2,0) {f};
+  \only<24-> \node[draw,circle,fill=green] (g) at (4,0) {g};
+  \only<26-> \node[draw,circle,fill=red] (h) at (6,0) {h};
+
+      \end{tikzpicture}
+      &
+\begin{tikzpicture}
+  \node[draw,ellipse] (a) at (1/6,0) {a};
+  \node[draw,ellipse] (ab) at (2/6,1) {a,b};
+  \node[draw,ellipse] (abc) at (3/6,2) {a,b,c};
+  \node[draw,ellipse] (bc) at (4/6,3) {b,c};
+  \node[draw,ellipse] (bcf) at (8/6,4) {b,c,f};
+  \node[draw,ellipse] (cf) at (10/6,5) {c,f};
+  \node[draw,ellipse] (cdf) at (14/6,6) {c,d,f};
+  \node[draw,ellipse] (b) at (14/6,0) {b};
+  \node[draw,ellipse] (be) at (13/6,1) {b,e};
+  \node[draw,ellipse] (bef) at (12/6,2) {b,e,f};
+  \node[draw,ellipse] (bf) at (11/6,3) {b,f};
+  \node[draw,ellipse] (d) at (23/6,0) {d};
+  \node[draw,ellipse] (dh) at (22/6,1) {d,h};
+  \node[draw,ellipse] (dgh) at (21/6,2) {d,g,h};
+  \node[draw,ellipse] (dg) at (20/6,3) {d,g};
+  \node[draw,ellipse] (dfg) at (19/6,4) {d,f,g};
+  \node[draw,ellipse] (df) at (18/6,5) {d,f};
+  \draw (a)--(ab)--(abc)--(bc)--(bcf)--(bf)--(bef)--(be)--(b);
+  \draw (bcf)--(cf)--(cdf)--(df)--(dfg)--(dg)--(dgh)--(dh)--(d);
+
+
+  
+  \only<2-> \node[draw,ellipse] (a) at (1/6,0) {\a};
+  \only<3-> \node[draw,ellipse] (ab) at (2/6,1) {\a,b};
+  \only<4-> \node[draw,ellipse] (abc) at (3/6,2) {\a,b,c};
+  
+  \only<6-> \node[draw,ellipse] (ab) at (2/6,1) {\a,\b};
+  \only<7-> \node[draw,ellipse] (abc) at (3/6,2) {\a,\b,c};
+  \only<8-> \node[draw,ellipse] (bc) at (4/6,3) {\b,c};
+  \only<9-> \node[draw,ellipse] (bcf) at (8/6,4) {\b,c,f};
+  \only<10-> \node[draw,ellipse] (bf) at (11/6,3) {\b,f}; 
+  \only<11-> \node[draw,ellipse] (bef) at (12/6,2) {\b,e,f};
+  \only<12-> \node[draw,ellipse] (be) at (13/6,1) {\b,e};
+  \only<13-> \node[draw,ellipse] (b) at (14/6,0) {\b};
+
+  \only<15-> \node[draw,ellipse] (abc) at (3/6,2) {\a,\b,\c};
+  \only<15-> \node[draw,ellipse] (abc) at (3/6,2) {\a,\b,\c};
+  \only<15-> \node[draw,ellipse] (bc) at (4/6,3) {\b,\c};
+  \only<15-> \node[draw,ellipse] (bcf) at (8/6,4) {\b,\c,f};
+  \only<15-> \node[draw,ellipse] (cf) at (10/6,5) {\c,f};
+  \only<15-> \node[draw,ellipse] (cdf) at (14/6,6) {\c,d,f};
+    
+  \only<17-> \node[draw,ellipse] (bf) at (11/6,3) {\b,\f}; 
+  \only<17-> \node[draw,ellipse] (bef) at (12/6,2) {\b,e,\f};
+  \only<17-> \node[draw,ellipse] (bcf) at (8/6,4) {\b,\c,\f};
+  \only<17-> \node[draw,ellipse] (cf) at (10/6,5) {\c,\f};
+  \only<17-> \node[draw,ellipse] (cdf) at (14/6,6) {\c,d,\f};
+  \only<17-> \node[draw,ellipse] (dfg) at (19/6,4) {d,\f,g};
+  \only<17-> \node[draw,ellipse] (df) at (18/6,5) {d,\f};
+
+  \only<19-> \node[draw,ellipse] (be) at (13/6,1) {\b,\e};
+  \only<19-> \node[draw,ellipse] (bef) at (12/6,2) {\b,\e,\f};
+  
+  \only<21-> \node[draw,ellipse] (cdf) at (14/6,6) {\c,\d,\f};
+  \only<21-> \node[draw,ellipse] (df) at (18/6,5) {\d,\f};
+  \only<21-> \node[draw,ellipse] (dfg) at (19/6,4) {\d,\f,g};
+  \only<21-> \node[draw,ellipse] (dg) at (20/6,3) {\d,g};
+  \only<21-> \node[draw,ellipse] (dgh) at (21/6,2) {\d,g,h};
+  \only<21-> \node[draw,ellipse] (dh) at (22/6,1) {\d,h};
+  \only<21-> \node[draw,ellipse] (d) at (23/6,0) {\d};
+
+  \only<23-> \node[draw,ellipse] (dfg) at (19/6,4) {\d,\f,\g};
+  \only<23-> \node[draw,ellipse] (dg) at (20/6,3) {\d,\g};
+  \only<23-> \node[draw,ellipse] (dgh) at (21/6,2) {\d,\g,h};
+
+  \only<25-> \node[draw,ellipse] (dh) at (22/6,1) {\d,\h};
+  \only<25-> \node[draw,ellipse] (dgh) at (21/6,2) {\d,\g,\h};
+
+  
+
+  
+  
+
+\end{tikzpicture}
+\\\end{tabular}
+
+\begin{footnotesize}
+\end{footnotesize}
+\end{center}
+\end{frame}
+
+\end{document}
+ 

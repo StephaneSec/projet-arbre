@@ -4,9 +4,9 @@
 \beamer@sectionintoc {2}{Tree decomposition of a graph}{5}{0}{2}
 \beamer@subsectionintoc {2}{1}{definition}{6}{0}{2}
 \beamer@subsectionintoc {2}{2}{treewidth}{11}{0}{2}
-\beamer@subsectionintoc {2}{3}{nice tree}{15}{0}{2}
-\beamer@subsectionintoc {2}{4}{Example}{16}{0}{2}
-\beamer@sectionintoc {3}{Application : k-color}{35}{0}{3}
-\beamer@subsectionintoc {3}{1}{the problem}{36}{0}{3}
-\beamer@subsectionintoc {3}{2}{illustration}{38}{0}{3}
-\beamer@sectionintoc {4}{Bibliography}{61}{0}{4}
+\beamer@subsectionintoc {2}{3}{nice tree}{14}{0}{2}
+\beamer@subsectionintoc {2}{4}{Example}{15}{0}{2}
+\beamer@sectionintoc {3}{Application : k-color}{34}{0}{3}
+\beamer@subsectionintoc {3}{1}{the problem}{35}{0}{3}
+\beamer@subsectionintoc {3}{2}{illustration}{37}{0}{3}
+\beamer@sectionintoc {4}{Bibliography}{60}{0}{4}

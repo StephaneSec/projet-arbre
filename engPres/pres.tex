@@ -97,7 +97,7 @@
     Now, I am going to present :
     \begin{itemize}
     \item important concepts to understand the goals of my project;
-    \item an example where this concepts help to solve a problem of coloration.
+    \item an example where these concepts help to solve a problem of coloration.
     \end{itemize}
     \end{obj}
 \end{frame}
@@ -229,15 +229,15 @@
   \vspace{-2mm}
   \begin{center}\fbox{Treewidth(G)=3-1=2}\end{center}}
 
-\uncover<4->{
-  \vspace{-2mm}
-  \begin{remark}
-    \begin{itemize}
-    \item The treewidth   of a tree is 1.
-    \item If a graph has a treewidth of 1 we can state that this graph is a forest (i.e. a collection of trees).
-    \end{itemize}
-    \end{remark}
-  }
+%\uncover<4->{
+%  \vspace{-2mm}
+%  \begin{remark}
+%    \begin{itemize}
+%    \item The treewidth   of a tree is 1.
+%    \item If a graph has a treewidth of 1 we can state that this graph is a forest (i.e. a collection of trees).
+%    \end{itemize}
+%    \end{remark}
+%  }
 
 \end{frame}
 
@@ -312,7 +312,7 @@
   This is a tree decomposition of the graph seen previously. How can we get a nice tree from it ?
 
   \begin{columns}
-    \begin{column}{0.4\textwidth}
+    \begin{column}{0.3\textwidth}
       \begin{tikzpicture}
         \only<1->\node[draw,ellipse,fill=red] (cdf) at (2,2) {c,d,f};
         \only<2->\node[draw,ellipse,fill=green] (cdf) at (2,2) {c,d,f};
@@ -368,20 +368,20 @@
         \uncover<18->{\draw(ab)--(a) (be)--(b) (dh)--(d);}
         \uncover<3-4>{\node[draw,rectangle] (a) at (-1,7) {\textcolor{red}{JOIN}};}
         \uncover<5->{\node[draw,rectangle,black!20!white] (a) at (-1,7) {\textcolor{red!30!white}{JOIN}};}
-        \uncover<5-6>{\node[draw,rectangle] (a) at (-1,6) {\textcolor{red}{FORGET}};}
-        \uncover<7->{\node[draw,rectangle,black!20!white] (a) at (-1,6) {\textcolor{red!30!white}{FORGET}};}
-        \uncover<7-8>{\node[draw,rectangle] (a) at (-1,5) {\textcolor{red}{INTRODUCE}};}
-        \uncover<9->{\node[draw,rectangle,black!20!white] (a) at (-1,5) {\textcolor{red!30!white}{INTRODUCE}};}
+        \uncover<5-6>{\node[draw,rectangle] (a) at (-1,6) {\textcolor{red}{INTRODUCE }};}
+        \uncover<7->{\node[draw,rectangle,black!20!white] (a) at (-1,6) {\textcolor{red!30!white}{INTRODUCE }};}
+        \uncover<7-8>{\node[draw,rectangle] (a) at (-1,5) {\textcolor{red}{FORGET}};}
+        \uncover<9->{\node[draw,rectangle,black!20!white] (a) at (-1,5) {\textcolor{red!30!white}{FORGET}};}
         \uncover<9-10>{\node[draw,rectangle] (a) at (-1,4) {\textcolor{red}{JOIN}};}
         \uncover<11->{\node[draw,rectangle,black!20!white] (a) at (-1,4) {\textcolor{red!30!white}{JOIN}};}
-        \uncover<11-12>{\node[draw,rectangle] (a) at (-1,3) {\textcolor{red}{FORGET}};}
-        \uncover<13->{\node[draw,rectangle,black!20!white] (a) at (-1,3) {\textcolor{red!30!white}{FORGET}};}
-        \uncover<13-14>{\node[draw,rectangle] (a) at (-1.2,2) {\textcolor{red}{INTRODUCE}};}
-        \uncover<15->{\node[draw,rectangle,black!20!white] (a) at (-1.2,2) {\textcolor{red!30!white}{INTRODUCE}};}
-        \uncover<15-16>{\node[draw,rectangle] (a) at (-1,1) {\textcolor{red}{FORGET}};}
-        \uncover<17->{\node[draw,rectangle,black!20!white] (a) at (-1,1) {\textcolor{red!30!white}{FORGET}};}
-        \uncover<17-18>{\node[draw,rectangle] (a) at (-1,0.3) {\textcolor{red}{FORGET}};}
-        \uncover<19->{\node[draw,rectangle,black!20!white] (a) at (-1,0.3) {\textcolor{red!30!white}{FORGET}};}
+        \uncover<11-12>{\node[draw,rectangle] (a) at (-1,3) {\textcolor{red}{INTRODUCE }};}
+        \uncover<13->{\node[draw,rectangle,black!20!white] (a) at (-1,3) {\textcolor{red!30!white}{INTRODUCE }};}
+        \uncover<13-14>{\node[draw,rectangle] (a) at (-1.2,2) {\textcolor{red}{FORGET}};}
+        \uncover<15->{\node[draw,rectangle,black!20!white] (a) at (-1.2,2) {\textcolor{red!30!white}{FORGET}};}
+        \uncover<15-16>{\node[draw,rectangle] (a) at (-1.5,1) {\textcolor{red}{INTRODUCE }};}
+        \uncover<17->{\node[draw,rectangle,black!20!white] (a) at (-1.5,1) {\textcolor{red!30!white}{INTRODUCE }};}
+        \uncover<17-18>{\node[draw,rectangle] (a) at (-1.5,0.3) {\textcolor{red}{INTRODUCE }};}
+        \uncover<19->{\node[draw,rectangle,black!20!white] (a) at (-1.5,0.3) {\textcolor{red!30!white}{INTRODUCE }};}
         \uncover<19>{\node[draw,rectangle] (a) at (-1,-0.4) {\textcolor{red}{LEAF}};}
         
       \end{tikzpicture}

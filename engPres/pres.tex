@@ -4,18 +4,39 @@
 \usepackage[T1]{fontenc}
 \usepackage[french]{babel}
 
+
+
+\AtBeginSection[]
+{
+  \begin{frame}
+  \frametitle{\textcolor{white}{Contents}}
+  \tiny{\tableofcontents[currentsection]}
+  \end{frame}
+}
 \newtheorem*{remark}{Remark}
 \newtheorem*{pb}{Problem}
+\newtheorem*{sol}{Solution}
+\newtheorem*{obj}{Objectives}
 
+
+
+%\usetheme{Frankfurt} % theme
+%\usetheme{Szeged} % theme
+\usetheme{Ilmenau} % theme
+%\usetheme{Darmstadt} % theme
 %\usetheme{Montpellier} % theme
-%\usetheme{CambridgeUS} % theme
-\usetheme{Boadilla} % theme
+%\usetheme{Luebeck} % theme
+%\usetheme{Antibes} % theme
+
+\usepackage[footheight=1em]{beamerthemeboxes}
+
+
 
 
 \titlegraphic{\includegraphics [width=\linewidth]{logos.png}}
 
-\title[Project's name]{Graphs' decompositions\\ and \\ resolutions of combinatorial problems}
-\author[My name]{\small {Stéphane Secouard\\ \footnotesize Supervised by: Florent Madeleine}} % auteur
+\title[Graphs' decompositions\\ and \\ resolutions of combinatorial problems]{Graphs' decompositions\\ and \\ resolutions of combinatorial problems}
+\author[Stéphane Secouard]{\small {Stéphane Secouard\\ \footnotesize Supervised by: Florent Madeleine}} 
 \institute[Caen University]{\textbf {Caen University - Computer science }}
 \date{25 october 2016}
 
@@ -25,29 +46,8 @@
 
 \usepackage{tikz}
 \usetikzlibrary{shapes,snakes}
-\setbeamercolor{titrell}{bg=blue,fg=white}
-\setbeamercolor{textell}{bg=blue!10,fg=black}
 
-%\useinnertheme{circles}
-%\useoutertheme{smouthtree} 
 
-%\logo{\includegraphics[height=10mm]{UNICAEN_LOGO_2015_V2_N_papier.png}}
-%\AtBeginSection[]
-
-%{
-
- % \begin{frame}
-
-  %\frametitle{Sommaire}
-
-  %\tableofcontents[currentsection, hideothersubsections, pausesubsections]
-
-  %\end{frame} 
-
-%}
-%------------------------------------------------------------
-
-\usepackage[footheight=1em]{beamerthemeboxes}
  
 \addfootboxtemplate{\color{black}}{\color{white}
      \hfill\insertframenumber/\inserttotalframenumber\hspace{2em}\null}
@@ -63,7 +63,7 @@
 
 \begin{frame}
 
-  \frametitle{ \textcolor{green!50!black}{Table of contents}}
+  \frametitle{ \textcolor{white}{Table of contents}}
 
   \tableofcontents
 
@@ -71,28 +71,52 @@
 
 
 
-%------------------------------------------------------------
+
+%----------------- diapo 4 --------------------------------------------
 
 
-%\begin{frame}
 
-%  \tableofcontents[currentsection]
+\section{Objectives}
 
-%\end{frame}
+\begin{frame}
+  \frametitle{ \textcolor{white}{Objectives}}
 
-%------------------- diapo 3 -----------------------------------------
-\section{Tree decomposition}
+  \begin{obj}[of my project]
+  \begin{itemize}
+  \item The first goal of this project is, starting from a graph whose  tree representation is known, to solve corresponding combinatorial problems.
+
+    The k-coloring problem, the max clique problem or the Hamilton path problem can be explored.
+
+\item The second purpose is to implement a graph decomposition calculator.
+
+\item Finally, it can be considered extensions by working on the efficiency of implementations on large-size structures, or improving the shape of displayed results.
+  \end{itemize}
+  \end{obj}
+
+  \begin{obj}[of my presentation]
+    Now, I am going to present :
+    \begin{itemize}
+    \item important concepts to understand the goals of my project;
+    \item an example where this concepts help to solve a problem of coloration.
+    \end{itemize}
+    \end{obj}
+\end{frame}
+
+
+
+%------------------- diapo 6 -----------------------------------------
+\section{Tree decomposition of a graph}
 
 \subsection{definition}
 \begin{frame}
-\frametitle{\textcolor{green!50!black}{Tree decomposition}}  
+\frametitle{\textcolor{white}{Tree decomposition of a graph}}  
 
 
 
-    \begin{definition}[Graph decomposition]
-  A tree T is a decomposition of a graph G  when its vertices are arranged satisfying the following properties :
+    \begin{definition}[Tree decomposition of a graph]
+  A tree T is a tree decomposition of a graph G  where its nodes are arranged satisfying the following properties :
   \begin{enumerate}
-  \item If u and v are netighbors in G, then there is a bag of T containing both of them.
+  \item If u and v are neighbors in G, then there is a bag of T containing both of them (a bag is a node of the tree).
   \item For every vertex v of G, the bags of T containing v form a connected subtree
   \end{enumerate}
 \end{definition}
@@ -119,7 +143,7 @@
 \end{tikzpicture}
 \end{column}
 \begin{column}{0.54\textwidth}
-  \begin{tikzpicture}[scale=1]
+  \begin{tikzpicture}[scale=0.9]
     \uncover<2->{\draw[thick](-1,0)--(-1,2);}
     \only<3>{\node[draw,rectangle](T) at (0,2){\textbf{($T_1$)}};}
   \uncover<3>{ 
@@ -152,25 +176,25 @@
 
 
 
-%-------------------- diapo 4 -----------------------------------------
+%-------------------- diapo 7 -----------------------------------------
 
 \subsection{treewidth}
 
 
 \begin{frame}
-  \frametitle{\textcolor{green!50!black}{Treewidth}}
+  \frametitle{\textcolor{white}{Treewidth}}
 
   
 \begin{definition}[treewidth]
  \begin{itemize}
- \item The \emph{width} of a decomposition is largest bag size - 1.
- \item The \emph{treewidth} of a graph is the width of the best decomposition of this graph.
+ \item The \emph{width} of a decomposition is (largest bag size - 1).
+ \item The \emph{treewidth} of a graph is the lowest width of all decompositions of this graph.
   \end{itemize}
   
 
 \end{definition}
 
-\uncover<2->{\underline{\textbf{Example :}} Assume (T) is one of the best representation og (G) :
+\uncover<2->{\underline{\textbf{Example :}} Assume (T) is one of the  representations of (G) which are giving the treewidth of (G) :
   \begin{tabular}{ll}
     \begin{tikzpicture}[scale=0.8]
       \node[draw,rectangle] (G) at (3,2.8) {\textbf(G)};
@@ -201,10 +225,17 @@
     
   \end{tabular}
 }
-\uncover<3->{\begin{center}\fbox{Treewidth(G)=3-1=2}\end{center}}
+\uncover<3->{
+  \vspace{-2mm}
+  \begin{center}\fbox{Treewidth(G)=3-1=2}\end{center}}
 
 \uncover<4->{
-  \begin{remark} The treewidth   of a tree is 1 and if a graph have a treewidth of 1 we can claim that this graph is a forest (i.e. a collection of trees).
+  \vspace{-2mm}
+  \begin{remark}
+    \begin{itemize}
+    \item The treewidth   of a tree is 1.
+    \item If a graph has a treewidth of 1 we can state that this graph is a forest (i.e. a collection of trees).
+    \end{itemize}
     \end{remark}
   }
 
@@ -212,17 +243,17 @@
 
 
 
-%----------------- diapo 5 --------------------------------------------
+%----------------- diapo 8 --------------------------------------------
 
 \subsection{nice tree}
 
 \begin{frame}
-  \frametitle{ \textcolor{green!50!black}{Nice tree}}
+  \frametitle{ \textcolor{white}{Nice tree}}
   
   \begin{definition}[nice tree]
-    A tree decomposition is \emph{nice} if every node $x$ is one of the following 4 types :
+    A tree decomposition is \emph{nice} if every node $x$ is one of the following 4 types  :
     \begin{description}
-    \item[Leaf :] no children, $|B_x|=1$
+    \item[Leaf :] no children, $|B_x|=1$ \hfill ($B_x$ names a bag of the tree containing $x$)
     \item[Introduce :] 1 child $y$, $B_x=B_y\cup \{v\}$ for some vertex $v$
     \item[Forget :] 1 child $y$, $B_x=B_y\backslash \{v\}$ for some vertex $v$.
     \item[Join :] 2 children $y_1$, $y_2$ with $B_x=B_{y_1}=B_{y_2}$
@@ -265,7 +296,7 @@
   \begin{remark}
     \begin{itemize}
     \item A tree decomposition can be turned into a nice tree decomposition
-    \item A nice tree could be very good to simplify a proof or to find an easy program to solve a problem (as we will see later).
+    \item A nice tree can be used to simplify a proof, or to find an easy program to solve a problem (as we will see later on).
     \end{itemize}
   \end{remark}
   
@@ -273,77 +304,85 @@
 \end{frame}
 
 
-%----------------- diapo 6-------------------------------------------
-\subsection{example}
+%----------------- diapo 9 -------------------------------------------
+\subsection{Example}
 
 \begin{frame}
-  \frametitle{ \textcolor{green!50!black}{example}}
-  This is a decomposition tree saw previously. How could we obtain a nice tree from it ?
+  \frametitle{ \textcolor{white}{Example}}
+  This is a tree decomposition of the graph seen previously. How can we get a nice tree from it ?
 
   \begin{columns}
-    \begin{column}{0.5\textwidth}
+    \begin{column}{0.4\textwidth}
       \begin{tikzpicture}
-%        \only<1->\node[draw,ellipse,fill=red] (cdf) at (2,2) {c,d,f};
-        \only<1->\node[draw,ellipse,fill=green] (cdf) at (2,2) {c,d,f};
+        \only<1->\node[draw,ellipse,fill=red] (cdf) at (2,2) {c,d,f};
+        \only<2->\node[draw,ellipse,fill=green] (cdf) at (2,2) {c,d,f};
         
-        \only<1-7>\node[draw,ellipse,fill=red] (bcf) at (1,1) {b,c,f};
-        \only<7->\node[draw,ellipse,fill=green] (bcf) at (1,1) {b,c,f};
+        \only<1-8>\node[draw,ellipse,fill=red] (bcf) at (1,1) {b,c,f};
+        \only<8->\node[draw,ellipse,fill=green] (bcf) at (1,1) {b,c,f};
         
-        \only<1-13>\node[draw,ellipse,fill=red] (abc) at (0,0) {a,b,c};
-        \only<13->\node[draw,ellipse,fill=green] (abc) at (0,0) {a,b,c};
+        \only<1-14>\node[draw,ellipse,fill=red] (abc) at (0,0) {a,b,c};
+        \only<14->\node[draw,ellipse,fill=green] (abc) at (0,0) {a,b,c};
         
-        \only<1-13>\node[draw,ellipse,fill=red] (bef) at (2,0) {b,e,f};
-        \only<13->\node[draw,ellipse,fill=green] (bef) at (2,0) {b,e,f};
+        \only<1-14>\node[draw,ellipse,fill=red] (bef) at (2,0) {b,e,f};
+        \only<14->\node[draw,ellipse,fill=green] (bef) at (2,0) {b,e,f};
         
-        \only<1-7>\node[draw,ellipse,fill=red] (dfg) at (3,1) {d,f,g};
-        \only<7->\node[draw,ellipse,fill=green] (dfg) at (3,1) {d,f,g};
+        \only<1-8>\node[draw,ellipse,fill=red] (dfg) at (3,1) {d,f,g};
+        \only<8->\node[draw,ellipse,fill=green] (dfg) at (3,1) {d,f,g};
         
-        \only<1-13>\node[draw,ellipse,fill=red] (dgh) at (4,0) {d,g,h};
-        \only<13->\node[draw,ellipse,fill=green] (dgh) at (4,0) {d,g,h};
+        \only<1-14>\node[draw,ellipse,fill=red] (dgh) at (4,0) {d,g,h};
+        \only<14->\node[draw,ellipse,fill=green] (dgh) at (4,0) {d,g,h};
         \draw (abc)--(bcf)--(cdf)--(dfg)--(dgh);
         \draw (bef)--(bcf);
       \end{tikzpicture}
     \end{column}
     \begin{column}{0.5\textwidth}
-      \begin{tikzpicture}[yscale=0.85]
-        \uncover<17->{\node[draw,ellipse] (a) at (1/6,0) {a};}
-        \uncover<15->{\node[draw,ellipse] (ab) at (2/6,1) {a,b};}
-        \uncover<13->{\node[draw,ellipse] (abc) at (3/6,2) {a,b,c};}
-        \uncover<11->{\node[draw,ellipse] (bc) at (4/6,3) {b,c};}
-        \uncover<9->{\node[draw,ellipse] (bcf1) at (4/6,4) {b,c,f};}
-        \uncover<7->{\node[draw,ellipse] (bcf) at (8/6,5) {b,c,f};}
-        \uncover<9->{\node[draw,ellipse] (bcf2) at (12/6,4) {b,c,f};}
-        \uncover<5->{\node[draw,ellipse] (cf) at (10/6,6) {c,f};}
-        \uncover<3->{\node[draw,ellipse] (cdf1) at (11/6,7) {c,d,f};}
-        \uncover<1->{\node[draw,ellipse] (cdf) at (14/6,8) {c,d,f};}
-        \uncover<3->{\node[draw,ellipse] (cdf2) at (18/6,7) {c,d,f};}        
-        \uncover<17->{\node[draw,ellipse] (b) at (14/6,0) {b};}
-        \uncover<15->{\node[draw,ellipse] (be) at (13/6,1) {b,e};}
-        \uncover<13->{\node[draw,ellipse] (bef) at (12/6,2) {b,e,f};}
-        \uncover<11->{\node[draw,ellipse] (bf) at (11/6,3) {b,f};}
-        \uncover<17->{\node[draw,ellipse] (d) at (23/6,1) {d};}
-        \uncover<15->{\node[draw,ellipse] (dh) at (22/6,2) {d,h};}
-        \uncover<13->{\node[draw,ellipse] (dgh) at (21/6,3) {d,g,h};}
-        \uncover<11->{\node[draw,ellipse] (dg) at (20/6,4) {d,g};}
-        \uncover<7->{\node[draw,ellipse] (dfg) at (19/6,5) {d,f,g};}
-        \uncover<5->{\node[draw,ellipse] (df) at (18/6,6) {d,f};}
-        \uncover<3->{\draw(cdf2)--(cdf)--(cdf1);}
-        \uncover<5->{\draw(cdf1)--(cf) (cdf2)--(df);}
-        \uncover<7->{\draw(cf)--(bcf) (df)--(dfg);}
-        \uncover<9->{\draw(bcf)--(bcf1) (bcf)--(bcf2);}
-        \uncover<11->{\draw(bcf1)--(bc) (bcf2)--(bf) (dfg)--(dg);}
-        \uncover<13->{\draw(bc)--(abc) (bf)--(bef) (dg)--(dgh);}
-        \uncover<15->{\draw(abc)--(ab) (bef)--(be) (dgh)--(dh);}
-        \uncover<17->{\draw(ab)--(a) (be)--(b) (dh)--(d);}
-        \uncover<2>{\node[draw,rectangle] (a) at (-1,6) {\textcolor{red}{JOIN}};}
-        \uncover<4>{\node[draw,rectangle] (a) at (-1,6) {\textcolor{red}{FORGET}};}
-        \uncover<6>{\node[draw,rectangle] (a) at (-1,6) {\textcolor{red}{INTRODUCE}};}
-        \uncover<8>{\node[draw,rectangle] (a) at (-1,6) {\textcolor{red}{JOIN}};}
-        \uncover<10>{\node[draw,rectangle] (a) at (-1,6) {\textcolor{red}{FORGET}};}
-        \uncover<12>{\node[draw,rectangle] (a) at (-1,6) {\textcolor{red}{INTRODUCE}};}
-        \uncover<14>{\node[draw,rectangle] (a) at (-1,6) {\textcolor{red}{FORGET}};}
-        \uncover<16>{\node[draw,rectangle] (a) at (-1,6) {\textcolor{red}{FORGET}};}
-               \uncover<18>{\node[draw,rectangle] (a) at (-1,6) {\textcolor{red}{LEAF}};}
+      \begin{tikzpicture}[yscale=0.8]
+        \uncover<18->{\node[draw,ellipse] (a) at (1/6,0) {a};}
+        \uncover<16->{\node[draw,ellipse] (ab) at (2/6,1) {a,b};}
+        \uncover<14->{\node[draw,ellipse] (abc) at (3/6,2) {a,b,c};}
+        \uncover<12->{\node[draw,ellipse] (bc) at (4/6,3) {b,c};}
+        \uncover<10->{\node[draw,ellipse] (bcf1) at (4/6,4) {b,c,f};}
+        \uncover<8->{\node[draw,ellipse] (bcf) at (8/6,5) {b,c,f};}
+        \uncover<10->{\node[draw,ellipse] (bcf2) at (12/6,4) {b,c,f};}
+        \uncover<6->{\node[draw,ellipse] (cf) at (10/6,6) {c,f};}
+        \uncover<4->{\node[draw,ellipse] (cdf1) at (11/6,7) {c,d,f};}
+        \uncover<2->{\node[draw,ellipse] (cdf) at (14/6,8) {c,d,f};}
+        \uncover<4->{\node[draw,ellipse] (cdf2) at (18/6,7) {c,d,f};}        
+        \uncover<18->{\node[draw,ellipse] (b) at (14/6,0) {b};}
+        \uncover<16->{\node[draw,ellipse] (be) at (13/6,1) {b,e};}
+        \uncover<14->{\node[draw,ellipse] (bef) at (12/6,2) {b,e,f};}
+        \uncover<12->{\node[draw,ellipse] (bf) at (11/6,3) {b,f};}
+        \uncover<18->{\node[draw,ellipse] (d) at (23/6,1) {d};}
+        \uncover<16->{\node[draw,ellipse] (dh) at (22/6,2) {d,h};}
+        \uncover<14->{\node[draw,ellipse] (dgh) at (21/6,3) {d,g,h};}
+        \uncover<12->{\node[draw,ellipse] (dg) at (20/6,4) {d,g};}
+        \uncover<8->{\node[draw,ellipse] (dfg) at (19/6,5) {d,f,g};}
+        \uncover<6->{\node[draw,ellipse] (df) at (18/6,6) {d,f};}
+        \uncover<4->{\draw(cdf2)--(cdf)--(cdf1);}
+        \uncover<6->{\draw(cdf1)--(cf) (cdf2)--(df);}
+        \uncover<8->{\draw(cf)--(bcf) (df)--(dfg);}
+        \uncover<10->{\draw(bcf)--(bcf1) (bcf)--(bcf2);}
+        \uncover<12->{\draw(bcf1)--(bc) (bcf2)--(bf) (dfg)--(dg);}
+        \uncover<14->{\draw(bc)--(abc) (bf)--(bef) (dg)--(dgh);}
+        \uncover<16->{\draw(abc)--(ab) (bef)--(be) (dgh)--(dh);}
+        \uncover<18->{\draw(ab)--(a) (be)--(b) (dh)--(d);}
+        \uncover<3-4>{\node[draw,rectangle] (a) at (-1,7) {\textcolor{red}{JOIN}};}
+        \uncover<5->{\node[draw,rectangle,black!20!white] (a) at (-1,7) {\textcolor{red!30!white}{JOIN}};}
+        \uncover<5-6>{\node[draw,rectangle] (a) at (-1,6) {\textcolor{red}{FORGET}};}
+        \uncover<7->{\node[draw,rectangle,black!20!white] (a) at (-1,6) {\textcolor{red!30!white}{FORGET}};}
+        \uncover<7-8>{\node[draw,rectangle] (a) at (-1,5) {\textcolor{red}{INTRODUCE}};}
+        \uncover<9->{\node[draw,rectangle,black!20!white] (a) at (-1,5) {\textcolor{red!30!white}{INTRODUCE}};}
+        \uncover<9-10>{\node[draw,rectangle] (a) at (-1,4) {\textcolor{red}{JOIN}};}
+        \uncover<11->{\node[draw,rectangle,black!20!white] (a) at (-1,4) {\textcolor{red!30!white}{JOIN}};}
+        \uncover<11-12>{\node[draw,rectangle] (a) at (-1,3) {\textcolor{red}{FORGET}};}
+        \uncover<13->{\node[draw,rectangle,black!20!white] (a) at (-1,3) {\textcolor{red!30!white}{FORGET}};}
+        \uncover<13-14>{\node[draw,rectangle] (a) at (-1.2,2) {\textcolor{red}{INTRODUCE}};}
+        \uncover<15->{\node[draw,rectangle,black!20!white] (a) at (-1.2,2) {\textcolor{red!30!white}{INTRODUCE}};}
+        \uncover<15-16>{\node[draw,rectangle] (a) at (-1,1) {\textcolor{red}{FORGET}};}
+        \uncover<17->{\node[draw,rectangle,black!20!white] (a) at (-1,1) {\textcolor{red!30!white}{FORGET}};}
+        \uncover<17-18>{\node[draw,rectangle] (a) at (-1,0.3) {\textcolor{red}{FORGET}};}
+        \uncover<19->{\node[draw,rectangle,black!20!white] (a) at (-1,0.3) {\textcolor{red!30!white}{FORGET}};}
+        \uncover<19>{\node[draw,rectangle] (a) at (-1,-0.4) {\textcolor{red}{LEAF}};}
         
       \end{tikzpicture}
     \end{column}
@@ -357,31 +396,34 @@
 
 
 
-%----------------- diapo 7--------------------------------------------
+
+%----------------- diapo 11 --------------------------------------------
 
 
 
-\section{Applications}
-\subsection{k-color}
-\subsubsection{the problem}
+\section{Application : k-color}
+\subsection{the problem}
 
 \begin{frame}
-  \frametitle{ \textcolor{green!50!black}{the problem}}
+  \frametitle{ \textcolor{white}{the problem}}
 \begin{pb}[k-color]
-  \begin{description}
-  \item[problem :] Let (G) be a graph and k an integer. We want to know if it is possible to draw each vertice of the graph such that two neighbors have never the same color and with only k color.
+Let (G) be a graph and k an integer. We want to know if it is possible to draw each vertice of the graph so that two neighbors have never the same color and with only k colors.
 
-    This problem is a problem of decision which is NP.
-  \item[tree-width :] k-color is possible for a graph (G) if and only if $k\geqslant treewidth(G)$.
-  \item[nice tree :] a nice tree of (G) give a way to find a k-coloration of (G) (if $k\geqslant treewidth(G)$).
+This problem is a problem of decisions problem which is NP-complet.
+  \end{pb}
+
+  \begin{sol}
+  \begin{description}
+  \item[tree-width :] k-color is possible for a graph (G) if and only if $k> treewidth(G)$.
+  \item[nice tree :] a nice tree of (G) gives a way to find a k-coloration of (G) (if $k> treewidth(G)$).
   \end{description}
-\end{pb}
+\end{sol}
 
 
 \uncover<2>{
   \underline{\textbf{Illustration :}} we will use the previously trees to solve the problem with this graph :
   \begin{center}  
-  \begin{tikzpicture}
+  \begin{tikzpicture}[scale=0.8]
     \node[draw,circle] (a) at (1,3) {a};
     \node[draw,circle] (b) at (0,2) {b};
     \node[draw,circle] (c) at (2,2) {c};
@@ -407,7 +449,7 @@
 
 
 
-%----------------- diapo 8 --------------------------------------------
+%----------------- diapo 12 --------------------------------------------
 \renewcommand\a{\textcolor{red}{a}}
 \renewcommand\b{\textcolor{blue}{b}}
 \renewcommand\c{\textcolor{green}{c}}
@@ -417,21 +459,21 @@
 \newcommand\g{\textcolor{green}{g}}
 \newcommand\h{\textcolor{red}{h}}
 
-\subsubsection{illustration}
+\subsection{illustration}
 \begin{frame}
 
-    \frametitle{ \textcolor{green!50!black}{nice tree of the graph}}
+    \frametitle{ \textcolor{white}{nice tree of the graph}}
     \begin{tabular}{ll}
 \begin{minipage}{0.5\textwidth}
       \begin{itemize}
-      \item treewith(G)=3 : we can solve the problem with 3 colors
-      \item we can fixe a color for a ``Leaf''
+      \item treewith(G)=2 : we can solve the problem with 3 colors
+      \item we can fix a color for a ``Leaf''
       \item when we meet an ``Introduce'' we add a color
-      \item when we meet a ``Forget'' we can claim that the vertex which has disappeared won't come back (propertie of the decomposition) and so we can reuse the color.
+      \item when we meet a ``Forget'' we can state that the vertex which has disappeared won't come back (property of the decomposition) and so we can reuse its color.
         
         \end{itemize}
       
-      \begin{tikzpicture}
+      \begin{tikzpicture}[scale=0.8]
   \node[draw,circle] (a) at (1,3) {a};
   \node[draw,circle] (b) at (0,2) {b};
   \node[draw,circle] (c) at (2,2) {c};
@@ -450,12 +492,12 @@
   \only<23-> \node[draw,circle,fill=red] (f) at (2,0) {f};
   \only<23-> \node[draw,circle,fill=green] (g) at (4,0) {g};
   \only<23-> \node[draw,circle,fill=red] (h) at (6,0) {h};
-  \draw(0,-10);
+  \draw(0,-12);
 
       \end{tikzpicture}
       \end{minipage}
       &
-\begin{tikzpicture}[yscale=0.9]
+\begin{tikzpicture}[yscale=0.85]
   \node[draw,ellipse] (a) at (1/6,0) {a};
   \only<2->\node[draw,ellipse] (a) at (1/6,0) {\a};
   
@@ -534,40 +576,49 @@
 
 
 
-%----------------- diapo 9--------------------------------------------
+%----------------- diapo 13 --------------------------------------------
 
 
 
 
-\subsection{max clik}
-\subsection{Hamilton cycle}
+%\subsection{max clique}
+%\subsection{Hamiltonian path problem}
 
-\begin{frame}
-  \frametitle{ \textcolor{green!50!black}{Other applications}}
-\end{frame}
+%\begin{frame}
+%  \frametitle{ \textcolor{white}{Other applications}}
+
+%  Many other problems can be study with a tree decomposition. For examples, we could have a look for :
+%  \begin{description}
+%  \item[Clique problem :] A clique in a graph is a complete subgraph (i.e. where any node pair is connected by an edge).
+
+%    The Clique problem is how to find a maximal clique in a graph.
+%  \item[Hamilton path problem :] a Hamiltonian path  is a path in a graph that visits each vertex exactly once.
+
+%    A Hamiltonian cycle is a Hamiltonian path that ends at the starting point.
+    
+%    Determining whether such paths and cycles exist in a graph is the Hamiltonian path problem, which is NP-complete.
+%    \end{description}
+%\end{frame}
 
 
 
 
-%----------------- diapo 10--------------------------------------------
 
 
-
-\section{Mission}
-
-\begin{frame}
-  \frametitle{ \textcolor{green!50!black}{Mission}}
-\end{frame}
-
-
-%----------------- diapo 11--------------------------------------------
+%----------------- diapo 14--------------------------------------------
 
 
 
 \section{Bibliography}
 
 \begin{frame}
-  \frametitle{ \textcolor{green!50!black}{Bibliography}}
+  \frametitle{ \textcolor{white}{Bibliography}}
+
+  \begin{description}
+  \item[(1)] Florent Madeleine : lesson for M2 Decim "Complexité des CSP et des requêtes"
+  \item[(2)] Dániel Marx : Fixed Parameter Algorithms
+  \item[(3)] wikipedia : articles of the graph section
+    \end{description}
 \end{frame}
 \end{document}
  

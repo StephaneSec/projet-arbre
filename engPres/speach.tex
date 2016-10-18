@@ -1,4 +1,4 @@
-\documentclass[a4paper, 11pt,french]{article}
+\documentclass[a4paper, 10pt,french,landscape]{article}
 \usepackage[dvips,top=1.5cm, bottom=1.5cm, left=1.5cm, right=1.5cm]{geometry}
 \usepackage{PreambuleXelatex}
 \usepackage{MacroTikz}
@@ -9,7 +9,7 @@
 
 
 \begin{document}
-
+\begin{multicols}{3}
 
 \subsubsection*{ 1 }
 
@@ -22,16 +22,16 @@ and this one is supervised by Florent Madeleine
 Here is the scheeme of my presentation. 
 First, I will briefly expose the objectives of my project
 
-Secondly I will introduce you two concepts : treewidth and nice tree.
+Secondly I will introduce you three concepts : tree decomposition, treewidth and nice tree.
 
 Finally, We will see an example of a problem's resolution which is using a nice tree and the treewidth.
 
 
-\subsubsection*{ 3}
+\subsubsection*{ 3-4}
 
 
 
-\subsubsection*{ 4}
+
 
 This project deals with a type of tree which is representing graph.
 
@@ -43,57 +43,54 @@ After that, I will have to implement a program to solve some of these problems.
 
 Once this first step is done, I will have to implement a program which is able to give a tree representation of a graph.
 
-Now, as I have said previously, I am going to expose some concepts and show how we can solve a problem with them.
+Now, I am going to expose some concepts which are useful in my project.
 
 
 
-\subsubsection*{ 5}
+\subsubsection*{ 5-6}
 
 
-\subsubsection*{ 6}
+
 
 A graph is not always as simple as a tree but it's possible to resume it  in a particular tree while keeping some graph's informations into the tree. 
 
 To do that, the nodes of the tree represent a collection of nodes of the graph such that : 
 
-LIRE 1 :
+* for example, the node 3 and the node 5 are connected with a edge and we can see that there is a bag which is containing both of them
 
- You can see that each edge of G is present at least in one of the node (bag) of T.
-
-LIRE 2 :
-
- this means that all the bags where is present a node (for example the  node 7) forms a tree (here a very simple one because it has only one branch).
+* for example, the node 3 is in three bags in the right's tree which are forming a sub-tree.
 
 It's important to realise two facts : 
 
-* lots of very different trees can represent a same graph
-* all graph has at least one tree representation. As a matter of fact, you can see that a tree as the tree T3 can always be made, even with a very complex graph.
+* lots of  trees can represent a same graph
+* all graph has at least one tree representation : T3 is just a leaf but it's always possible to construct such a tree representation.
 
 
 \subsubsection*{ 7}
 
-The more a graph is strange (for example with a lot of loops), the more its tree representation has to contain some big node. 
+%The more a graph is strange (for example with a lot of loops), the more its tree representation has to contain some big node. 
 
-So it seams important to determine how far is a graph from a tree : this is the role of the treewidth
+It seams important to determine how far is a graph from a tree : this is the role of the treewidth
 
-LIRE LE PREMIER POINT :
+* the first point defines the width of a decomposition
+* the second point defines the treewidth of a graph which is the width of the ``best'' tree decomposition (where the width is minimum).
 
- Remember that a tree representation of a graph is not unique and so  there is no reason that the width of one of tree representation is the same of another one. 
 
- 
-LIRE LE DEUXIÈME POINT
+In the example, I assume that T is one of the best tree decomposition of G.
+Each bag's size is 3 so the treewidth is 2.
 
-We can understand that we want to consider the tree with the smallest nodes. 
 
-In the example, each bag of T has a width of 3 so the treewidth is 2. 
+%We can understand that we want to consider the tree with the smallest nodes. 
 
-In comparaison, the graph of the previous slide has a treewidth of 3 and it seams obvious (at least to me) that its structure is more far from a tree than the present graph.
+%In the example, each bag of T has a width of 3 so the treewidth is 2. 
+
+%In comparaison, the graph of the previous slide has a treewidth of 3 and it seams obvious (at least to me) that its structure is more far from a tree than the present graph.
 
 
 
 \subsubsection*{ 8}
 
-Now that we can evaluate the treewidth of a graph, I will expose a particular tree representation which is useful to implement algorithms : the well-named nice  trees
+Now that we can evaluate the treewidth of a graph, I will expose a particular tree representation : the nice  tree
 
 In a nice tree, we can only find this four situations : 
 
@@ -105,18 +102,15 @@ Join : in a bottom-up approach, two same nodes give a unique node with the same 
 
 The remark will be more explained in the two next slides. 
 
-It serves two purposes : 
+%It serves two purposes : 
 
-* can we always obtain a nice tree ? The response is yes and we will show you in the next slide
-* why is it useful ? It's to decompose complex mechanisms and thereby to answer to some problems
+%* can we always obtain a nice tree ? The response is yes and we will show you in the next slide
+%* why is it useful ? It's to decompose complex mechanisms and thereby to answer to some problems
 
 \subsubsection*{ 9}
 
 Here is a tree representation of a graph and we want to obtain a nice tree of this graph.
 
-I want to draw your attention that I will constuct my nice tree from the root to the leaf and in the definition of a nice tree we are beginning from the leaf to the root.
-
-So the "FORGET" method, the "INTRODUCE" method  and the "JOIN" method will seem reverse action.
 
 We are starting from the root and it's the same node for the two trees.
 
@@ -136,28 +130,24 @@ We will use it in the next situation.
 
 
 
-\subsubsection*{ 10}
+\subsubsection*{ 10-11}
 
 
-\subsubsection*{ 11}
+
 
 The k-color problem is a well known problem where we want to know if we can color a graph with k colors so that two neighbors never have the same color.
 
 We have seen two concepts before and each of them is usuful here : 
 
-LIRE
 
 In other words, treewidth tells us if it is possible and nice tree gives us a way to do it.
 
 It is a good moment to study an example : we want to color this graph we have seen before and for which we have its treewidth and a nice tree.
 
-I draw your attention that it is easy for a human to see how many colors he needs to resolve this particular problem and how to color it. 
-
-But this is not so easy to program a computer to do it especialy if the graph is bigger and the way to do it can be very long : this problem is NP-complet.
-
- And our goal is to implement a program which is able to find the solution in a short time.
 
 \subsubsection*{ 12}
+
+
 
 the biggest bag contains 3 letters so the treewidth is 2 so we need 3 colors to solve the problem.
 
@@ -167,18 +157,17 @@ when we make an introduce we add a color but when we make a forget we can reuse 
 
 So this alternation of forget and introduce insures that we can make the coloration with 3 colors.
 
-FAIRE DEFILER 
 
 Finally, the nice tree is colored with 3 colors and we can color the graph with this combination.
 
 
 
-\subsubsection*{ 13}
+\subsubsection*{ 13-14}
 
 
-\subsubsection*{ 14}
+
 
 
 Thank you for your attention
-
+\end{multicols}
 \end{document}

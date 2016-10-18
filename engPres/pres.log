@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2016.4.28)  18 OCT 2016 21:03
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2016.4.28)  18 OCT 2016 22:07
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1715,7 +1715,7 @@ Overfull \hbox (54.58047pt too wide) in paragraph at lines 409--409
  []
 
 
-Overfull \hbox (34.10556pt too wide) in paragraph at lines 409--409
+Overfull \hbox (24.95502pt too wide) in paragraph at lines 409--409
 [][]  
  []
 
@@ -1943,7 +1943,7 @@ Overfull \hbox (54.58047pt too wide) in paragraph at lines 409--409
  []
 
 
-Overfull \hbox (34.10556pt too wide) in paragraph at lines 409--409
+Overfull \hbox (24.95502pt too wide) in paragraph at lines 409--409
 [][]  
  []
 
@@ -2171,7 +2171,7 @@ Overfull \hbox (54.58047pt too wide) in paragraph at lines 409--409
  []
 
 
-Overfull \hbox (34.10556pt too wide) in paragraph at lines 409--409
+Overfull \hbox (24.95502pt too wide) in paragraph at lines 409--409
 [][]  
  []
 
@@ -2399,7 +2399,7 @@ Overfull \hbox (54.58047pt too wide) in paragraph at lines 409--409
  []
 
 
-Overfull \hbox (34.10556pt too wide) in paragraph at lines 409--409
+Overfull \hbox (24.95502pt too wide) in paragraph at lines 409--409
 [][]  
  []
 
@@ -2627,7 +2627,7 @@ Overfull \hbox (54.58047pt too wide) in paragraph at lines 409--409
  []
 
 
-Overfull \hbox (34.10556pt too wide) in paragraph at lines 409--409
+Overfull \hbox (24.95502pt too wide) in paragraph at lines 409--409
 [][]  
  []
 
@@ -2855,7 +2855,7 @@ Overfull \hbox (54.58047pt too wide) in paragraph at lines 409--409
  []
 
 
-Overfull \hbox (34.10556pt too wide) in paragraph at lines 409--409
+Overfull \hbox (24.95502pt too wide) in paragraph at lines 409--409
 [][]  
  []
 
@@ -3083,7 +3083,7 @@ Overfull \hbox (54.58047pt too wide) in paragraph at lines 409--409
  []
 
 
-Overfull \hbox (34.10556pt too wide) in paragraph at lines 409--409
+Overfull \hbox (24.95502pt too wide) in paragraph at lines 409--409
 [][]  
  []
 
@@ -3225,7 +3225,7 @@ Overfull \hbox (54.58047pt too wide) in paragraph at lines 409--409
  []
 
 
-Overfull \hbox (34.10556pt too wide) in paragraph at lines 409--409
+Overfull \hbox (24.95502pt too wide) in paragraph at lines 409--409
 [][]  
  []
 
@@ -3449,7 +3449,7 @@ Overfull \hbox (54.58047pt too wide) in paragraph at lines 409--409
  []
 
 
-Overfull \hbox (34.10556pt too wide) in paragraph at lines 409--409
+Overfull \hbox (24.95502pt too wide) in paragraph at lines 409--409
 [][]  
  []
 
@@ -3673,7 +3673,7 @@ Overfull \hbox (54.58047pt too wide) in paragraph at lines 409--409
  []
 
 
-Overfull \hbox (34.10556pt too wide) in paragraph at lines 409--409
+Overfull \hbox (24.95502pt too wide) in paragraph at lines 409--409
 [][]  
  []
 
@@ -3897,7 +3897,7 @@ Overfull \hbox (54.58047pt too wide) in paragraph at lines 409--409
  []
 
 
-Overfull \hbox (34.10556pt too wide) in paragraph at lines 409--409
+Overfull \hbox (24.95502pt too wide) in paragraph at lines 409--409
 [][]  
  []
 
@@ -4121,7 +4121,7 @@ Overfull \hbox (54.58047pt too wide) in paragraph at lines 409--409
  []
 
 
-Overfull \hbox (34.10556pt too wide) in paragraph at lines 409--409
+Overfull \hbox (24.95502pt too wide) in paragraph at lines 409--409
 [][]  
  []
 
@@ -4345,7 +4345,7 @@ Overfull \hbox (54.58047pt too wide) in paragraph at lines 409--409
  []
 
 
-Overfull \hbox (34.10556pt too wide) in paragraph at lines 409--409
+Overfull \hbox (24.95502pt too wide) in paragraph at lines 409--409
 [][]  
  []
 
@@ -4440,7 +4440,7 @@ Overfull \hbox (54.58047pt too wide) in paragraph at lines 409--409
  []
 
 
-Overfull \hbox (34.10556pt too wide) in paragraph at lines 409--409
+Overfull \hbox (24.95502pt too wide) in paragraph at lines 409--409
 [][]  
  []
 
@@ -4658,7 +4658,7 @@ Overfull \hbox (54.58047pt too wide) in paragraph at lines 409--409
  []
 
 
-Overfull \hbox (34.10556pt too wide) in paragraph at lines 409--409
+Overfull \hbox (24.95502pt too wide) in paragraph at lines 409--409
 [][]  
  []
 
@@ -4876,7 +4876,7 @@ Overfull \hbox (54.58047pt too wide) in paragraph at lines 409--409
  []
 
 
-Overfull \hbox (34.10556pt too wide) in paragraph at lines 409--409
+Overfull \hbox (24.95502pt too wide) in paragraph at lines 409--409
 [][]  
  []
 
@@ -5094,7 +5094,7 @@ Overfull \hbox (54.58047pt too wide) in paragraph at lines 409--409
  []
 
 
-Overfull \hbox (34.10556pt too wide) in paragraph at lines 409--409
+Overfull \hbox (24.95502pt too wide) in paragraph at lines 409--409
 [][]  
  []
 
@@ -5312,7 +5312,7 @@ Overfull \hbox (54.58047pt too wide) in paragraph at lines 409--409
  []
 
 
-Overfull \hbox (34.10556pt too wide) in paragraph at lines 409--409
+Overfull \hbox (24.95502pt too wide) in paragraph at lines 409--409
 [][]  
  []
 
@@ -5530,7 +5530,7 @@ Overfull \hbox (54.58047pt too wide) in paragraph at lines 409--409
  []
 
 
-Overfull \hbox (34.10556pt too wide) in paragraph at lines 409--409
+Overfull \hbox (24.95502pt too wide) in paragraph at lines 409--409
 [][]  
  []
 

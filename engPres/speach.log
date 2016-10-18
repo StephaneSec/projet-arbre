@@ -1,12 +1,12 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2016.4.28)  18 OCT 2016 18:41
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2016.4.28)  18 OCT 2016 22:10
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
 **\nonstopmode\input speach.tex
 (./speach.tex (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
-(/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
-File: size11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
 \c@section=\count80
@@ -1147,24 +1147,24 @@ LaTeX Font Info:    ... okay on input line 11.
 * paper: a4paper
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: 
-* h-part:(L,W,R)=(42.67912pt, 512.14963pt, 42.67912pt)
-* v-part:(T,H,B)=(42.67912pt, 759.6886pt, 42.67912pt)
-* \paperwidth=597.50787pt
-* \paperheight=845.04684pt
-* \textwidth=512.14963pt
-* \textheight=759.6886pt
+* modes: landscape 
+* h-part:(L,W,R)=(42.67912pt, 759.6886pt, 42.67912pt)
+* v-part:(T,H,B)=(42.67912pt, 512.14963pt, 42.67912pt)
+* \paperwidth=845.04684pt
+* \paperheight=597.50787pt
+* \textwidth=759.6886pt
+* \textheight=512.14963pt
 * \oddsidemargin=-29.59087pt
 * \evensidemargin=-29.59087pt
 * \topmargin=-66.59087pt
 * \headheight=12.0pt
 * \headsep=25.0pt
-* \topskip=11.0pt
+* \topskip=10.0pt
 * \footskip=30.0pt
-* \marginparwidth=50.0pt
-* \marginparsep=10.0pt
+* \marginparwidth=144.0pt
+* \marginparsep=11.0pt
 * \columnsep=10.0pt
-* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
@@ -1181,14 +1181,14 @@ Package frenchb.ldf Info: Setting StandardEnumerateEnv=true for
 LaTeX Info: Redefining \up on input line 11.
 ABD: EveryShipout initializing macros [1
 
-] [2] [3] (./speach.aux) ) 
+] (./speach.aux) ) 
 Here is how much of TeX's memory you used:
- 30150 strings out of 493638
- 628421 string characters out of 6146796
- 662340 words of memory out of 5000000
- 33127 multiletter control sequences out of 15000+600000
- 3996 words of font info for 22 fonts, out of 8000000 for 9000
+ 30148 strings out of 493638
+ 628348 string characters out of 6146796
+ 685371 words of memory out of 5000000
+ 33125 multiletter control sequences out of 15000+600000
+ 3688 words of font info for 20 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
- 62i,6n,78p,10437b,282s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,5n,78p,10437b,282s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on speach.pdf (3 pages).
+Output written on speach.pdf (1 page).

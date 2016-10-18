@@ -18,39 +18,34 @@
 \headcommand {\beamer@subsectionentry {0}{2}{1}{6}{Tree decomposition}}\headcommand {\beamer@subsectionpages {5}{5}}
 \headcommand {\slideentry {2}{1}{1}{6/12}{Tree decomposition}{0}}
 \headcommand {\beamer@framepages {6}{12}}
-\headcommand {\sectionentry {3}{Tree decomposition of a graph}{13}{Tree decomposition of a graph}{0}}
-\headcommand {\beamer@sectionpages {5}{12}}
-\headcommand {\beamer@subsectionpages {6}{12}}
-\headcommand {\slideentry {3}{0}{1}{13/13}{}{0}}
-\headcommand {\beamer@framepages {13}{13}}
-\headcommand {\beamer@subsectionentry {0}{3}{1}{14}{Tree decomposition}}\headcommand {\beamer@subsectionpages {13}{13}}
-\headcommand {\slideentry {3}{1}{1}{14/23}{Tree decomposition}{0}}
-\headcommand {\beamer@framepages {14}{23}}
-\headcommand {\beamer@subsectionentry {0}{3}{2}{24}{Nice tree}}\headcommand {\beamer@subsectionpages {14}{23}}
-\headcommand {\slideentry {3}{2}{1}{24/24}{Nice tree}{0}}
-\headcommand {\beamer@framepages {24}{24}}
-\headcommand {\slideentry {3}{2}{2}{25/43}{Nice tree}{0}}
-\headcommand {\beamer@framepages {25}{43}}
-\headcommand {\sectionentry {4}{Application : k-color}{44}{Application : k-color}{0}}
-\headcommand {\beamer@sectionpages {13}{43}}
-\headcommand {\beamer@subsectionpages {24}{43}}
-\headcommand {\slideentry {4}{0}{1}{44/44}{}{0}}
-\headcommand {\beamer@framepages {44}{44}}
-\headcommand {\beamer@subsectionentry {0}{4}{1}{45}{The problem}}\headcommand {\beamer@subsectionpages {44}{44}}
-\headcommand {\slideentry {4}{1}{1}{45/46}{The problem}{0}}
-\headcommand {\beamer@framepages {45}{46}}
-\headcommand {\beamer@subsectionentry {0}{4}{2}{47}{Illustration}}\headcommand {\beamer@subsectionpages {45}{46}}
-\headcommand {\slideentry {4}{2}{1}{47/69}{Illustration}{0}}
-\headcommand {\beamer@framepages {47}{69}}
-\headcommand {\sectionentry {5}{Bibliography}{70}{Bibliography}{0}}
-\headcommand {\beamer@sectionpages {44}{69}}
-\headcommand {\beamer@subsectionpages {47}{69}}
-\headcommand {\slideentry {5}{0}{1}{70/70}{}{0}}
+\headcommand {\beamer@subsectionentry {0}{2}{2}{13}{Treewidth}}\headcommand {\beamer@subsectionpages {6}{12}}
+\headcommand {\slideentry {2}{2}{1}{13/22}{Treewidth}{0}}
+\headcommand {\beamer@framepages {13}{22}}
+\headcommand {\beamer@subsectionentry {0}{2}{3}{23}{Nice tree}}\headcommand {\beamer@subsectionpages {13}{22}}
+\headcommand {\slideentry {2}{3}{1}{23/23}{Nice tree}{0}}
+\headcommand {\beamer@framepages {23}{23}}
+\headcommand {\slideentry {2}{3}{2}{24/42}{Nice tree}{0}}
+\headcommand {\beamer@framepages {24}{42}}
+\headcommand {\sectionentry {3}{Application : k-color}{43}{Application : k-color}{0}}
+\headcommand {\beamer@sectionpages {5}{42}}
+\headcommand {\beamer@subsectionpages {23}{42}}
+\headcommand {\slideentry {3}{0}{1}{43/43}{}{0}}
+\headcommand {\beamer@framepages {43}{43}}
+\headcommand {\beamer@subsectionentry {0}{3}{1}{44}{The problem}}\headcommand {\beamer@subsectionpages {43}{43}}
+\headcommand {\slideentry {3}{1}{1}{44/45}{The problem}{0}}
+\headcommand {\beamer@framepages {44}{45}}
+\headcommand {\beamer@subsectionentry {0}{3}{2}{46}{Illustration}}\headcommand {\beamer@subsectionpages {44}{45}}
+\headcommand {\slideentry {3}{2}{1}{46/68}{Illustration}{0}}
+\headcommand {\beamer@framepages {46}{68}}
+\headcommand {\sectionentry {4}{Bibliography}{69}{Bibliography}{0}}
+\headcommand {\beamer@sectionpages {43}{68}}
+\headcommand {\beamer@subsectionpages {46}{68}}
+\headcommand {\slideentry {4}{0}{1}{69/69}{}{0}}
+\headcommand {\beamer@framepages {69}{69}}
+\headcommand {\slideentry {4}{0}{2}{70/70}{}{0}}
 \headcommand {\beamer@framepages {70}{70}}
-\headcommand {\slideentry {5}{0}{2}{71/71}{}{0}}
-\headcommand {\beamer@framepages {71}{71}}
-\headcommand {\beamer@partpages {1}{71}}
-\headcommand {\beamer@subsectionpages {70}{71}}
-\headcommand {\beamer@sectionpages {70}{71}}
-\headcommand {\beamer@documentpages {71}}
-\headcommand {\def \inserttotalframenumber {15}}
+\headcommand {\beamer@partpages {1}{70}}
+\headcommand {\beamer@subsectionpages {69}{70}}
+\headcommand {\beamer@sectionpages {69}{70}}
+\headcommand {\beamer@documentpages {70}}
+\headcommand {\def \inserttotalframenumber {14}}

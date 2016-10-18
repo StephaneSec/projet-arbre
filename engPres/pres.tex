@@ -413,10 +413,24 @@
 
 \begin{frame}
   \frametitle{ \textcolor{white}{How to obtain a nice tree ?}}
-  This is a tree decomposition of the graph seen previously. 
+  This is a tree decomposition of the graph (G). 
 
   \begin{columns}
     \begin{column}{0.3\textwidth}
+      \begin{tikzpicture}[scale=0.8]
+      \node[draw,rectangle] (G) at (3,2.8) {\textbf(G)};
+      \node[draw,circle] (a) at (1,3) {a};
+      \node[draw,circle] (b) at (0,2) {b};
+      \node[draw,circle] (c) at (2,2) {c};
+      \node[draw,circle] (d) at (4,2) {d};
+      \node[draw,circle] (e) at (0,0) {e};
+      \node[draw,circle] (f) at (2,0) {f};
+      \node[draw,circle] (g) at (4,0) {g};
+      \node[draw,circle] (h) at (6,0) {h};
+      \draw (c)--(a)--(b)--(e)--(f)--(c)--(b);
+      \draw (c)--(d)--(f)--(g)--(d)--(h)--(g);
+    \end{tikzpicture}
+
       \begin{tikzpicture}
         \only<1->\node[draw,ellipse,fill=red] (cdf) at (2,2) {c,d,f};
         \only<2->\node[draw,ellipse,fill=green] (cdf) at (2,2) {c,d,f};
@@ -525,7 +539,7 @@ This problem is a problem of decisions problem which is NP-complet.
 
 
 \uncover<2>{
-  \underline{\textbf{Illustration :}} we will use the previously trees to solve the problem with this graph :
+  \underline{\textbf{Illustration :}} we will use the previously nice  tree to solve the problem with this graph :
   \begin{center}  
   \begin{tikzpicture}[scale=0.8]
     \node[draw,circle] (a) at (1,3) {a};

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2016.4.28)  18 OCT 2016 23:02
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2016.4.28)  18 OCT 2016 23:24
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1550,6 +1550,10 @@ Overfull \hbox (12.5829pt too wide) in paragraph at lines 408--408
 [23
 
 ]
+Overfull \hbox (59.92934pt too wide) in paragraph at lines 509--509
+[][]  
+ []
+
 Missing character: There is no [ in font nullfont!
 Missing character: There is no d in font nullfont!
 Missing character: There is no r in font nullfont!
@@ -1809,18 +1813,22 @@ Missing character: There is no , in font nullfont!
 Missing character: There is no h in font nullfont!
 Missing character: There is no ; in font nullfont!
 
-Overfull \hbox (54.58047pt too wide) in paragraph at lines 495--495
+Overfull \hbox (54.58047pt too wide) in paragraph at lines 509--509
 [][]  
  []
 
 
-Overfull \hbox (24.95502pt too wide) in paragraph at lines 495--495
+Overfull \hbox (24.95502pt too wide) in paragraph at lines 509--509
 [][]  
  []
 
 [24
 
 ]
+Overfull \hbox (59.92934pt too wide) in paragraph at lines 509--509
+[][]  
+ []
+
 Missing character: There is no [ in font nullfont!
 Missing character: There is no d in font nullfont!
 Missing character: There is no r in font nullfont!
@@ -2037,18 +2045,22 @@ Missing character: There is no , in font nullfont!
 Missing character: There is no h in font nullfont!
 Missing character: There is no ; in font nullfont!
 
-Overfull \hbox (54.58047pt too wide) in paragraph at lines 495--495
+Overfull \hbox (54.58047pt too wide) in paragraph at lines 509--509
 [][]  
  []
 
 
-Overfull \hbox (24.95502pt too wide) in paragraph at lines 495--495
+Overfull \hbox (24.95502pt too wide) in paragraph at lines 509--509
 [][]  
  []
 
 [25
 
 ]
+Overfull \hbox (59.92934pt too wide) in paragraph at lines 509--509
+[][]  
+ []
+
 Missing character: There is no [ in font nullfont!
 Missing character: There is no d in font nullfont!
 Missing character: There is no r in font nullfont!
@@ -2265,18 +2277,22 @@ Missing character: There is no , in font nullfont!
 Missing character: There is no h in font nullfont!
 Missing character: There is no ; in font nullfont!
 
-Overfull \hbox (54.58047pt too wide) in paragraph at lines 495--495
+Overfull \hbox (54.58047pt too wide) in paragraph at lines 509--509
 [][]  
  []
 
 
-Overfull \hbox (24.95502pt too wide) in paragraph at lines 495--495
+Overfull \hbox (24.95502pt too wide) in paragraph at lines 509--509
 [][]  
  []
 
 [26
 
 ]
+Overfull \hbox (59.92934pt too wide) in paragraph at lines 509--509
+[][]  
+ []
+
 Missing character: There is no [ in font nullfont!
 Missing character: There is no d in font nullfont!
 Missing character: There is no r in font nullfont!
@@ -2493,18 +2509,22 @@ Missing character: There is no , in font nullfont!
 Missing character: There is no h in font nullfont!
 Missing character: There is no ; in font nullfont!
 
-Overfull \hbox (54.58047pt too wide) in paragraph at lines 495--495
+Overfull \hbox (54.58047pt too wide) in paragraph at lines 509--509
 [][]  
  []
 
 
-Overfull \hbox (24.95502pt too wide) in paragraph at lines 495--495
+Overfull \hbox (24.95502pt too wide) in paragraph at lines 509--509
 [][]  
  []
 
 [27
 
 ]
+Overfull \hbox (59.92934pt too wide) in paragraph at lines 509--509
+[][]  
+ []
+
 Missing character: There is no [ in font nullfont!
 Missing character: There is no d in font nullfont!
 Missing character: There is no r in font nullfont!
@@ -2721,18 +2741,22 @@ Missing character: There is no , in font nullfont!
 Missing character: There is no h in font nullfont!
 Missing character: There is no ; in font nullfont!
 
-Overfull \hbox (54.58047pt too wide) in paragraph at lines 495--495
+Overfull \hbox (54.58047pt too wide) in paragraph at lines 509--509
 [][]  
  []
 
 
-Overfull \hbox (24.95502pt too wide) in paragraph at lines 495--495
+Overfull \hbox (24.95502pt too wide) in paragraph at lines 509--509
 [][]  
  []
 
 [28
 
 ]
+Overfull \hbox (59.92934pt too wide) in paragraph at lines 509--509
+[][]  
+ []
+
 Missing character: There is no [ in font nullfont!
 Missing character: There is no d in font nullfont!
 Missing character: There is no r in font nullfont!
@@ -2949,18 +2973,22 @@ Missing character: There is no , in font nullfont!
 Missing character: There is no h in font nullfont!
 Missing character: There is no ; in font nullfont!
 
-Overfull \hbox (54.58047pt too wide) in paragraph at lines 495--495
+Overfull \hbox (54.58047pt too wide) in paragraph at lines 509--509
 [][]  
  []
 
 
-Overfull \hbox (24.95502pt too wide) in paragraph at lines 495--495
+Overfull \hbox (24.95502pt too wide) in paragraph at lines 509--509
 [][]  
  []
 
 [29
 
 ]
+Overfull \hbox (59.92934pt too wide) in paragraph at lines 509--509
+[][]  
+ []
+
 Missing character: There is no [ in font nullfont!
 Missing character: There is no d in font nullfont!
 Missing character: There is no r in font nullfont!
@@ -3177,18 +3205,22 @@ Missing character: There is no , in font nullfont!
 Missing character: There is no h in font nullfont!
 Missing character: There is no ; in font nullfont!
 
-Overfull \hbox (54.58047pt too wide) in paragraph at lines 495--495
+Overfull \hbox (54.58047pt too wide) in paragraph at lines 509--509
 [][]  
  []
 
 
-Overfull \hbox (24.95502pt too wide) in paragraph at lines 495--495
+Overfull \hbox (24.95502pt too wide) in paragraph at lines 509--509
 [][]  
  []
 
 [30
 
 ]
+Overfull \hbox (59.92934pt too wide) in paragraph at lines 509--509
+[][]  
+ []
+
 Missing character: There is no [ in font nullfont!
 Missing character: There is no d in font nullfont!
 Missing character: There is no r in font nullfont!
@@ -3319,18 +3351,22 @@ Missing character: There is no , in font nullfont!
 Missing character: There is no h in font nullfont!
 Missing character: There is no ; in font nullfont!
 
-Overfull \hbox (54.58047pt too wide) in paragraph at lines 495--495
+Overfull \hbox (54.58047pt too wide) in paragraph at lines 509--509
 [][]  
  []
 
 
-Overfull \hbox (24.95502pt too wide) in paragraph at lines 495--495
+Overfull \hbox (24.95502pt too wide) in paragraph at lines 509--509
 [][]  
  []
 
 [31
 
 ]
+Overfull \hbox (59.92934pt too wide) in paragraph at lines 509--509
+[][]  
+ []
+
 Missing character: There is no [ in font nullfont!
 Missing character: There is no d in font nullfont!
 Missing character: There is no r in font nullfont!
@@ -3543,18 +3579,22 @@ Missing character: There is no , in font nullfont!
 Missing character: There is no h in font nullfont!
 Missing character: There is no ; in font nullfont!
 
-Overfull \hbox (54.58047pt too wide) in paragraph at lines 495--495
+Overfull \hbox (54.58047pt too wide) in paragraph at lines 509--509
 [][]  
  []
 
 
-Overfull \hbox (24.95502pt too wide) in paragraph at lines 495--495
+Overfull \hbox (24.95502pt too wide) in paragraph at lines 509--509
 [][]  
  []
 
 [32
 
 ]
+Overfull \hbox (59.92934pt too wide) in paragraph at lines 509--509
+[][]  
+ []
+
 Missing character: There is no [ in font nullfont!
 Missing character: There is no d in font nullfont!
 Missing character: There is no r in font nullfont!
@@ -3767,18 +3807,22 @@ Missing character: There is no , in font nullfont!
 Missing character: There is no h in font nullfont!
 Missing character: There is no ; in font nullfont!
 
-Overfull \hbox (54.58047pt too wide) in paragraph at lines 495--495
+Overfull \hbox (54.58047pt too wide) in paragraph at lines 509--509
 [][]  
  []
 
 
-Overfull \hbox (24.95502pt too wide) in paragraph at lines 495--495
+Overfull \hbox (24.95502pt too wide) in paragraph at lines 509--509
 [][]  
  []
 
 [33
 
 ]
+Overfull \hbox (59.92934pt too wide) in paragraph at lines 509--509
+[][]  
+ []
+
 Missing character: There is no [ in font nullfont!
 Missing character: There is no d in font nullfont!
 Missing character: There is no r in font nullfont!
@@ -3991,18 +4035,22 @@ Missing character: There is no , in font nullfont!
 Missing character: There is no h in font nullfont!
 Missing character: There is no ; in font nullfont!
 
-Overfull \hbox (54.58047pt too wide) in paragraph at lines 495--495
+Overfull \hbox (54.58047pt too wide) in paragraph at lines 509--509
 [][]  
  []
 
 
-Overfull \hbox (24.95502pt too wide) in paragraph at lines 495--495
+Overfull \hbox (24.95502pt too wide) in paragraph at lines 509--509
 [][]  
  []
 
 [34
 
 ]
+Overfull \hbox (59.92934pt too wide) in paragraph at lines 509--509
+[][]  
+ []
+
 Missing character: There is no [ in font nullfont!
 Missing character: There is no d in font nullfont!
 Missing character: There is no r in font nullfont!
@@ -4215,18 +4263,22 @@ Missing character: There is no , in font nullfont!
 Missing character: There is no h in font nullfont!
 Missing character: There is no ; in font nullfont!
 
-Overfull \hbox (54.58047pt too wide) in paragraph at lines 495--495
+Overfull \hbox (54.58047pt too wide) in paragraph at lines 509--509
 [][]  
  []
 
 
-Overfull \hbox (24.95502pt too wide) in paragraph at lines 495--495
+Overfull \hbox (24.95502pt too wide) in paragraph at lines 509--509
 [][]  
  []
 
 [35
 
 ]
+Overfull \hbox (59.92934pt too wide) in paragraph at lines 509--509
+[][]  
+ []
+
 Missing character: There is no [ in font nullfont!
 Missing character: There is no d in font nullfont!
 Missing character: There is no r in font nullfont!
@@ -4439,18 +4491,22 @@ Missing character: There is no , in font nullfont!
 Missing character: There is no h in font nullfont!
 Missing character: There is no ; in font nullfont!
 
-Overfull \hbox (54.58047pt too wide) in paragraph at lines 495--495
+Overfull \hbox (54.58047pt too wide) in paragraph at lines 509--509
 [][]  
  []
 
 
-Overfull \hbox (24.95502pt too wide) in paragraph at lines 495--495
+Overfull \hbox (24.95502pt too wide) in paragraph at lines 509--509
 [][]  
  []
 
 [36
 
 ]
+Overfull \hbox (59.92934pt too wide) in paragraph at lines 509--509
+[][]  
+ []
+
 Missing character: There is no [ in font nullfont!
 Missing character: There is no d in font nullfont!
 Missing character: There is no r in font nullfont!
@@ -4534,18 +4590,22 @@ Missing character: There is no , in font nullfont!
 Missing character: There is no g in font nullfont!
 Missing character: There is no ; in font nullfont!
 
-Overfull \hbox (54.58047pt too wide) in paragraph at lines 495--495
+Overfull \hbox (54.58047pt too wide) in paragraph at lines 509--509
 [][]  
  []
 
 
-Overfull \hbox (24.95502pt too wide) in paragraph at lines 495--495
+Overfull \hbox (24.95502pt too wide) in paragraph at lines 509--509
 [][]  
  []
 
 [37
 
 ]
+Overfull \hbox (59.92934pt too wide) in paragraph at lines 509--509
+[][]  
+ []
+
 Missing character: There is no [ in font nullfont!
 Missing character: There is no d in font nullfont!
 Missing character: There is no r in font nullfont!
@@ -4752,18 +4812,22 @@ Missing character: There is no , in font nullfont!
 Missing character: There is no h in font nullfont!
 Missing character: There is no ; in font nullfont!
 
-Overfull \hbox (54.58047pt too wide) in paragraph at lines 495--495
+Overfull \hbox (54.58047pt too wide) in paragraph at lines 509--509
 [][]  
  []
 
 
-Overfull \hbox (24.95502pt too wide) in paragraph at lines 495--495
+Overfull \hbox (24.95502pt too wide) in paragraph at lines 509--509
 [][]  
  []
 
 [38
 
 ]
+Overfull \hbox (59.92934pt too wide) in paragraph at lines 509--509
+[][]  
+ []
+
 Missing character: There is no [ in font nullfont!
 Missing character: There is no d in font nullfont!
 Missing character: There is no r in font nullfont!
@@ -4970,18 +5034,22 @@ Missing character: There is no , in font nullfont!
 Missing character: There is no h in font nullfont!
 Missing character: There is no ; in font nullfont!
 
-Overfull \hbox (54.58047pt too wide) in paragraph at lines 495--495
+Overfull \hbox (54.58047pt too wide) in paragraph at lines 509--509
 [][]  
  []
 
 
-Overfull \hbox (24.95502pt too wide) in paragraph at lines 495--495
+Overfull \hbox (24.95502pt too wide) in paragraph at lines 509--509
 [][]  
  []
 
 [39
 
 ]
+Overfull \hbox (59.92934pt too wide) in paragraph at lines 509--509
+[][]  
+ []
+
 Missing character: There is no [ in font nullfont!
 Missing character: There is no d in font nullfont!
 Missing character: There is no r in font nullfont!
@@ -5188,18 +5256,22 @@ Missing character: There is no , in font nullfont!
 Missing character: There is no h in font nullfont!
 Missing character: There is no ; in font nullfont!
 
-Overfull \hbox (54.58047pt too wide) in paragraph at lines 495--495
+Overfull \hbox (54.58047pt too wide) in paragraph at lines 509--509
 [][]  
  []
 
 
-Overfull \hbox (24.95502pt too wide) in paragraph at lines 495--495
+Overfull \hbox (24.95502pt too wide) in paragraph at lines 509--509
 [][]  
  []
 
 [40
 
 ]
+Overfull \hbox (59.92934pt too wide) in paragraph at lines 509--509
+[][]  
+ []
+
 Missing character: There is no [ in font nullfont!
 Missing character: There is no d in font nullfont!
 Missing character: There is no r in font nullfont!
@@ -5406,18 +5478,22 @@ Missing character: There is no , in font nullfont!
 Missing character: There is no h in font nullfont!
 Missing character: There is no ; in font nullfont!
 
-Overfull \hbox (54.58047pt too wide) in paragraph at lines 495--495
+Overfull \hbox (54.58047pt too wide) in paragraph at lines 509--509
 [][]  
  []
 
 
-Overfull \hbox (24.95502pt too wide) in paragraph at lines 495--495
+Overfull \hbox (24.95502pt too wide) in paragraph at lines 509--509
 [][]  
  []
 
 [41
 
 ]
+Overfull \hbox (59.92934pt too wide) in paragraph at lines 509--509
+[][]  
+ []
+
 Missing character: There is no [ in font nullfont!
 Missing character: There is no d in font nullfont!
 Missing character: There is no r in font nullfont!
@@ -5624,12 +5700,12 @@ Missing character: There is no , in font nullfont!
 Missing character: There is no h in font nullfont!
 Missing character: There is no ; in font nullfont!
 
-Overfull \hbox (54.58047pt too wide) in paragraph at lines 495--495
+Overfull \hbox (54.58047pt too wide) in paragraph at lines 509--509
 [][]  
  []
 
 
-Overfull \hbox (24.95502pt too wide) in paragraph at lines 495--495
+Overfull \hbox (24.95502pt too wide) in paragraph at lines 509--509
 [][]  
  []
 
@@ -6614,12 +6690,12 @@ Missing character: There is no , in font nullfont!
 Missing character: There is no f in font nullfont!
 Missing character: There is no ; in font nullfont!
 
-Overfull \hbox (15.41425pt too wide) in paragraph at lines 712--712
+Overfull \hbox (15.41425pt too wide) in paragraph at lines 726--726
 [][]  
  []
 
 
-Overfull \vbox (241.91031pt too high) detected at line 712
+Overfull \vbox (241.91031pt too high) detected at line 726
  []
 
 [46
@@ -7569,12 +7645,12 @@ Missing character: There is no , in font nullfont!
 Missing character: There is no f in font nullfont!
 Missing character: There is no ; in font nullfont!
 
-Overfull \hbox (15.41425pt too wide) in paragraph at lines 712--712
+Overfull \hbox (15.41425pt too wide) in paragraph at lines 726--726
 [][]  
  []
 
 
-Overfull \vbox (241.91031pt too high) detected at line 712
+Overfull \vbox (241.91031pt too high) detected at line 726
  []
 
 [47
@@ -8493,12 +8569,12 @@ Missing character: There is no , in font nullfont!
 Missing character: There is no f in font nullfont!
 Missing character: There is no ; in font nullfont!
 
-Overfull \hbox (15.41425pt too wide) in paragraph at lines 712--712
+Overfull \hbox (15.41425pt too wide) in paragraph at lines 726--726
 [][]  
  []
 
 
-Overfull \vbox (241.91031pt too high) detected at line 712
+Overfull \vbox (241.91031pt too high) detected at line 726
  []
 
 [48
@@ -9383,12 +9459,12 @@ Missing character: There is no , in font nullfont!
 Missing character: There is no f in font nullfont!
 Missing character: There is no ; in font nullfont!
 
-Overfull \hbox (15.41425pt too wide) in paragraph at lines 712--712
+Overfull \hbox (15.41425pt too wide) in paragraph at lines 726--726
 [][]  
  []
 
 
-Overfull \vbox (241.91031pt too high) detected at line 712
+Overfull \vbox (241.91031pt too high) detected at line 726
  []
 
 [49
@@ -10242,12 +10318,12 @@ Missing character: There is no , in font nullfont!
 Missing character: There is no f in font nullfont!
 Missing character: There is no ; in font nullfont!
 
-Overfull \hbox (15.41425pt too wide) in paragraph at lines 712--712
+Overfull \hbox (15.41425pt too wide) in paragraph at lines 726--726
 [][]  
  []
 
 
-Overfull \vbox (241.91031pt too high) detected at line 712
+Overfull \vbox (241.91031pt too high) detected at line 726
  []
 
 [50
@@ -11066,12 +11142,12 @@ Missing character: There is no , in font nullfont!
 Missing character: There is no f in font nullfont!
 Missing character: There is no ; in font nullfont!
 
-Overfull \hbox (15.41425pt too wide) in paragraph at lines 712--712
+Overfull \hbox (15.41425pt too wide) in paragraph at lines 726--726
 [][]  
  []
 
 
-Overfull \vbox (241.91031pt too high) detected at line 712
+Overfull \vbox (241.91031pt too high) detected at line 726
  []
 
 [51
@@ -11856,12 +11932,12 @@ Missing character: There is no , in font nullfont!
 Missing character: There is no f in font nullfont!
 Missing character: There is no ; in font nullfont!
 
-Overfull \hbox (15.41425pt too wide) in paragraph at lines 712--712
+Overfull \hbox (15.41425pt too wide) in paragraph at lines 726--726
 [][]  
  []
 
 
-Overfull \vbox (241.91031pt too high) detected at line 712
+Overfull \vbox (241.91031pt too high) detected at line 726
  []
 
 [52
@@ -12610,12 +12686,12 @@ Missing character: There is no , in font nullfont!
 Missing character: There is no f in font nullfont!
 Missing character: There is no ; in font nullfont!
 
-Overfull \hbox (15.41425pt too wide) in paragraph at lines 712--712
+Overfull \hbox (15.41425pt too wide) in paragraph at lines 726--726
 [][]  
  []
 
 
-Overfull \vbox (241.91031pt too high) detected at line 712
+Overfull \vbox (241.91031pt too high) detected at line 726
  []
 
 [53
@@ -13332,12 +13408,12 @@ Missing character: There is no , in font nullfont!
 Missing character: There is no f in font nullfont!
 Missing character: There is no ; in font nullfont!
 
-Overfull \hbox (15.41425pt too wide) in paragraph at lines 712--712
+Overfull \hbox (15.41425pt too wide) in paragraph at lines 726--726
 [][]  
  []
 
 
-Overfull \vbox (241.91031pt too high) detected at line 712
+Overfull \vbox (241.91031pt too high) detected at line 726
  []
 
 [54
@@ -14019,12 +14095,12 @@ Missing character: There is no , in font nullfont!
 Missing character: There is no f in font nullfont!
 Missing character: There is no ; in font nullfont!
 
-Overfull \hbox (15.41425pt too wide) in paragraph at lines 712--712
+Overfull \hbox (15.41425pt too wide) in paragraph at lines 726--726
 [][]  
  []
 
 
-Overfull \vbox (241.91031pt too high) detected at line 712
+Overfull \vbox (241.91031pt too high) detected at line 726
  []
 
 [55
@@ -14674,12 +14750,12 @@ Missing character: There is no , in font nullfont!
 Missing character: There is no f in font nullfont!
 Missing character: There is no ; in font nullfont!
 
-Overfull \hbox (15.41425pt too wide) in paragraph at lines 712--712
+Overfull \hbox (15.41425pt too wide) in paragraph at lines 726--726
 [][]  
  []
 
 
-Overfull \vbox (241.91031pt too high) detected at line 712
+Overfull \vbox (241.91031pt too high) detected at line 726
  []
 
 [56
@@ -15300,12 +15376,12 @@ Missing character: There is no , in font nullfont!
 Missing character: There is no f in font nullfont!
 Missing character: There is no ; in font nullfont!
 
-Overfull \hbox (15.41425pt too wide) in paragraph at lines 712--712
+Overfull \hbox (15.41425pt too wide) in paragraph at lines 726--726
 [][]  
  []
 
 
-Overfull \vbox (241.91031pt too high) detected at line 712
+Overfull \vbox (241.91031pt too high) detected at line 726
  []
 
 [57
@@ -15894,12 +15970,12 @@ Missing character: There is no , in font nullfont!
 Missing character: There is no f in font nullfont!
 Missing character: There is no ; in font nullfont!
 
-Overfull \hbox (15.41425pt too wide) in paragraph at lines 712--712
+Overfull \hbox (15.41425pt too wide) in paragraph at lines 726--726
 [][]  
  []
 
 
-Overfull \vbox (241.91031pt too high) detected at line 712
+Overfull \vbox (241.91031pt too high) detected at line 726
  []
 
 [58
@@ -16452,12 +16528,12 @@ Missing character: There is no , in font nullfont!
 Missing character: There is no f in font nullfont!
 Missing character: There is no ; in font nullfont!
 
-Overfull \hbox (15.41425pt too wide) in paragraph at lines 712--712
+Overfull \hbox (15.41425pt too wide) in paragraph at lines 726--726
 [][]  
  []
 
 
-Overfull \vbox (241.91031pt too high) detected at line 712
+Overfull \vbox (241.91031pt too high) detected at line 726
  []
 
 [59
@@ -16975,12 +17051,12 @@ Missing character: There is no , in font nullfont!
 Missing character: There is no f in font nullfont!
 Missing character: There is no ; in font nullfont!
 
-Overfull \hbox (15.41425pt too wide) in paragraph at lines 712--712
+Overfull \hbox (15.41425pt too wide) in paragraph at lines 726--726
 [][]  
  []
 
 
-Overfull \vbox (241.91031pt too high) detected at line 712
+Overfull \vbox (241.91031pt too high) detected at line 726
  []
 
 [60
@@ -17462,12 +17538,12 @@ Missing character: There is no , in font nullfont!
 Missing character: There is no f in font nullfont!
 Missing character: There is no ; in font nullfont!
 
-Overfull \hbox (15.41425pt too wide) in paragraph at lines 712--712
+Overfull \hbox (15.41425pt too wide) in paragraph at lines 726--726
 [][]  
  []
 
 
-Overfull \vbox (241.91031pt too high) detected at line 712
+Overfull \vbox (241.91031pt too high) detected at line 726
  []
 
 [61
@@ -17917,12 +17993,12 @@ Missing character: There is no , in font nullfont!
 Missing character: There is no g in font nullfont!
 Missing character: There is no ; in font nullfont!
 
-Overfull \hbox (15.41425pt too wide) in paragraph at lines 712--712
+Overfull \hbox (15.41425pt too wide) in paragraph at lines 726--726
 [][]  
  []
 
 
-Overfull \vbox (241.91031pt too high) detected at line 712
+Overfull \vbox (241.91031pt too high) detected at line 726
  []
 
 [62
@@ -18337,12 +18413,12 @@ Missing character: There is no , in font nullfont!
 Missing character: There is no g in font nullfont!
 Missing character: There is no ; in font nullfont!
 
-Overfull \hbox (15.41425pt too wide) in paragraph at lines 712--712
+Overfull \hbox (15.41425pt too wide) in paragraph at lines 726--726
 [][]  
  []
 
 
-Overfull \vbox (241.91031pt too high) detected at line 712
+Overfull \vbox (241.91031pt too high) detected at line 726
  []
 
 [63
@@ -18725,12 +18801,12 @@ Missing character: There is no , in font nullfont!
 Missing character: There is no h in font nullfont!
 Missing character: There is no ; in font nullfont!
 
-Overfull \hbox (15.41425pt too wide) in paragraph at lines 712--712
+Overfull \hbox (15.41425pt too wide) in paragraph at lines 726--726
 [][]  
  []
 
 
-Overfull \vbox (241.91031pt too high) detected at line 712
+Overfull \vbox (241.91031pt too high) detected at line 726
  []
 
 [64
@@ -19078,12 +19154,12 @@ Missing character: There is no , in font nullfont!
 Missing character: There is no h in font nullfont!
 Missing character: There is no ; in font nullfont!
 
-Overfull \hbox (15.41425pt too wide) in paragraph at lines 712--712
+Overfull \hbox (15.41425pt too wide) in paragraph at lines 726--726
 [][]  
  []
 
 
-Overfull \vbox (241.91031pt too high) detected at line 712
+Overfull \vbox (241.91031pt too high) detected at line 726
  []
 
 [65
@@ -19399,12 +19475,12 @@ Missing character: There is no ) in font nullfont!
 Missing character: There is no d in font nullfont!
 Missing character: There is no ; in font nullfont!
 
-Overfull \hbox (15.41425pt too wide) in paragraph at lines 712--712
+Overfull \hbox (15.41425pt too wide) in paragraph at lines 726--726
 [][]  
  []
 
 
-Overfull \vbox (241.91031pt too high) detected at line 712
+Overfull \vbox (241.91031pt too high) detected at line 726
  []
 
 [66
@@ -19691,23 +19767,23 @@ Missing character: There is no ) in font nullfont!
 Missing character: There is no h in font nullfont!
 Missing character: There is no ; in font nullfont!
 
-Overfull \hbox (15.41425pt too wide) in paragraph at lines 712--712
+Overfull \hbox (15.41425pt too wide) in paragraph at lines 726--726
 [][]  
  []
 
 
-Overfull \vbox (241.91031pt too high) detected at line 712
+Overfull \vbox (241.91031pt too high) detected at line 726
  []
 
 [67
 
 ]
-Overfull \hbox (15.41425pt too wide) in paragraph at lines 712--712
+Overfull \hbox (15.41425pt too wide) in paragraph at lines 726--726
 [][]  
  []
 
 
-Overfull \vbox (241.91031pt too high) detected at line 712
+Overfull \vbox (241.91031pt too high) detected at line 726
  []
 
 [68
@@ -19726,22 +19802,22 @@ Overfull \vbox (241.91031pt too high) detected at line 712
 \tf@snm=\write8
 \openout8 = `pres.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 760.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 760.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 774.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 774.
  (./pres.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 760.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 760.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 774.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 774.
 
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 760.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 774.
  ) 
 Here is how much of TeX's memory you used:
  26661 strings out of 493638
  530030 string characters out of 6146796
- 737109 words of memory out of 5000000
+ 744172 words of memory out of 5000000
  29496 multiletter control sequences out of 15000+600000
  15726 words of font info for 43 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191

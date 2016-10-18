@@ -5,13 +5,13 @@ class Arbre:
 		self.noeud=noeud
 	
 	def fairestring(self):	#pas au point
-		if self.isSheet():
+		if self.isLeaf():
 			return str(self.noeud)
 		else :
 			for x in self.fils:
 				return str(x.noeud)+x.fairestring()
 			
-	def isSheet(self):
+	def isLeaf(self):
 		return (len(self.fils)==0)
 
 	def parcourir(self):		#pas au point

@@ -24,7 +24,7 @@ First, I will briefly expose the objectives of my project
 
 Secondly I will introduce you three concepts : tree decomposition, treewidth and nice tree.
 
-Finally, We will see an example of a problem's resolution which is using a nice tree and the treewidth.
+Finally, We will see how to use this concept to solve a problemution which is using a nice tree and the treewidth.
 
 
 \subsubsection*{ 3-4}
@@ -56,7 +56,7 @@ A graph is not always as simple as a tree but it's possible to resume it  in a p
 
 To do that, the nodes of the tree represent a collection of nodes of the graph such that : 
 
-* for example, the node 3 and the node 5 are connected with a edge and we can see that there is a bag which is containing both of them
+* for example, the node 3 and the node 5 are connected with an edge and we can see that there is a bag which is containing both of them
 
 * for example, the node 3 is in three bags in the right's tree which are forming a sub-tree.
 
@@ -73,11 +73,12 @@ It's important to realise two facts :
 It seams important to determine how far is a graph from a tree : this is the role of the treewidth
 
 * the first point defines the width of a decomposition
+
+Look at this with the previous examples
+
 * the second point defines the treewidth of a graph which is the width of the ``best'' tree decomposition (where the width is minimum).
 
 
-In the example, I assume that T is one of the best tree decomposition of G.
-Each bag's size is 3 so the treewidth is 2.
 
 
 %We can understand that we want to consider the tree with the smallest nodes. 
@@ -116,7 +117,7 @@ We are starting from the root and it's the same node for the two trees.
 
 In the tree on the left, each son of the root looses a letter and wins another one.
 
- This can be done with a join (to have two branches), a introduce (to loose a letter) and a forget (to win a letter). 
+ This can be done with a join (to have two branches), a forget (to loose a letter) and a introduce (to win a letter). 
  
  So we obtain the good nodes in the nice tree.
 

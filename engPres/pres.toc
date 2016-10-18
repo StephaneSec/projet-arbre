@@ -3,10 +3,10 @@
 \beamer@sectionintoc {1}{Objectives}{3}{0}{1}
 \beamer@sectionintoc {2}{Tree decomposition of a graph}{5}{0}{2}
 \beamer@subsectionintoc {2}{1}{Tree decomposition}{6}{0}{2}
-\beamer@subsectionintoc {2}{2}{Treewidth}{13}{0}{2}
-\beamer@subsectionintoc {2}{3}{Nice tree}{16}{0}{2}
-\beamer@subsectionintoc {2}{4}{Example}{17}{0}{2}
-\beamer@sectionintoc {3}{Application : k-color}{36}{0}{3}
-\beamer@subsectionintoc {3}{1}{The problem}{37}{0}{3}
-\beamer@subsectionintoc {3}{2}{Illustration}{39}{0}{3}
-\beamer@sectionintoc {4}{Bibliography}{62}{0}{4}
+\beamer@sectionintoc {3}{Tree decomposition of a graph}{13}{0}{3}
+\beamer@subsectionintoc {3}{1}{Tree decomposition}{14}{0}{3}
+\beamer@subsectionintoc {3}{2}{Nice tree}{24}{0}{3}
+\beamer@sectionintoc {4}{Application : k-color}{44}{0}{4}
+\beamer@subsectionintoc {4}{1}{The problem}{45}{0}{4}
+\beamer@subsectionintoc {4}{2}{Illustration}{47}{0}{4}
+\beamer@sectionintoc {5}{Bibliography}{70}{0}{5}

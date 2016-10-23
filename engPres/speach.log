@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2016.4.28)  18 OCT 2016 23:41
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2016.4.28)  19 OCT 2016 13:47
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1179,16 +1179,23 @@ Package frenchb.ldf Info: Setting StandardEnumerateEnv=true for
 (frenchb.ldf)             compatibility with enumerate package,
 (frenchb.ldf)              on input line 11.
 LaTeX Info: Redefining \up on input line 11.
-ABD: EveryShipout initializing macros [1
+ABD: EveryShipout initializing macros
+Overfull \vbox (7.14688pt too high) has occurred while \output is active []
 
-] (./speach.aux) ) 
+
+Overfull \vbox (12.68188pt too high) has occurred while \output is active []
+
+
+[1
+
+] [2] (./speach.aux) ) 
 Here is how much of TeX's memory you used:
  30148 strings out of 493638
  628348 string characters out of 6146796
- 685371 words of memory out of 5000000
+ 695371 words of memory out of 5000000
  33125 multiletter control sequences out of 15000+600000
  3688 words of font info for 20 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
  62i,5n,78p,10437b,282s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on speach.pdf (1 page).
+Output written on speach.pdf (2 pages).

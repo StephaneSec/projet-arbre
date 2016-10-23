@@ -13,8 +13,8 @@
 
 \subsubsection*{ 1 }
 
-Hello,
-my project for this year is named "graphs' decompositions and resolutions of combinatorial problems" 
+Good morning,
+my project for this year is named "graph decompositions and resolutions of combinatorial problems" 
 and this one is supervised by Florent Madeleine
 
 \subsubsection*{ 2}
@@ -24,14 +24,14 @@ First, I will briefly expose the objectives of my project
 
 Secondly I will introduce you three concepts : tree decomposition, treewidth and nice tree.
 
-Finally, We will see how to use this concept to solve a graph's problem which is using a nice tree and the treewidth.
+Finally, We will see how to use this concept to solve a graph problem which is using a nice tree and the treewidth.
 
 
 \subsubsection*{ 3-4}
 
 
 
-
+Here are the objectives of my project.
 
 This project deals with a type of tree which is representing graph.
 
@@ -70,14 +70,17 @@ It's important to realise two facts :
 
 %The more a graph is strange (for example with a lot of loops), the more its tree representation has to contain some big node. 
 
-It seams important to determine how far is a graph from a tree : this is the role of the treewidth
+It seems important to determine how far is a graph from a tree : this is the role of the treewidth
 
 * the first point defines the width of a decomposition
 
 Look at this with the previous examples
 
-* the second point defines the treewidth of a graph which is the width of the ``best'' tree decomposition (where the width is minimum).
 
+The number are differents but the graph remain the saime
+
+* the second point defines the treewidth of a graph which is the width of the ``best'' tree decomposition (where the width is minimum).
+.
 
 
 
@@ -101,7 +104,7 @@ Introduce and Forget: in a bottom-up approach, there is one lettre more or one l
 
 Join : in a bottom-up approach, two same nodes give a unique node with the same content.
 
-The remark will be more explained in the two next slides. 
+The remark will be more explained in the two following slides. 
 
 %It serves two purposes : 
 
@@ -123,11 +126,11 @@ In the tree on the left, each son of the root looses a letter and wins another o
 
 We can make some similar steps and we obtain all the nodes of the starting tree.
 
-It is not over because in a nice tree the leafs have to contain a single letter. But it is easy  to obtain with some introduces.
+It is not over because in a nice tree the leafs have to contain a single letter. But it is easy  to obtain with some forget.
 
 Finally we obtain a nice tree of the previous graph. 
 
-We will use it in the next situation.
+We will use it in the following situation.
 
 
 
@@ -150,11 +153,11 @@ It is a good moment to study an example : we want to color this graph we have se
 
 
 
-the biggest bag contains 3 letters so the treewidth is 2 so we need 3 colors to solve the problem.
+the biggest bag contains 3 letters so the treewidth is 2 then only 3 colors are necessary to color the graph.
 
 We can start from the "a" leaf : for example it could be colored with red.
 
-when we make an introduce we add a color but when we make a forget we can reuse the color of the letter which is gone because we know that this letter never come back latter : this is one of the property of a tree representation.
+when we make an introduce we add a color but when we make a forget we can reuse the color of the letter which is gone because we know that this letter will never come back latter : this is one of the property of a tree representation.
 
 So this alternation of forget and introduce insures that we can make the coloration with 3 colors.
 
@@ -170,5 +173,12 @@ Finally, the nice tree is colored with 3 colors and we can color the graph with 
 
 
 Thank you for your attention
+
+\subsubsection*{questions}
+\begin{itemize}
+\item pourquoi avoir pris ce projet ?
+\item qu'est-ce qui te semble le plus dur dans ce que tu as fait ? dans ce que tu dois faire.
+\end{itemize}
+
 \end{multicols}
 \end{document}
